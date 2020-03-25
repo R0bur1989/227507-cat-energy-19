@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Моргунов](https://up.htmlacademy.ru/adaptive/19/user/227507).
-* Наставник: `Неизвестно`.
+* Наставник: `Антон Игнатенко`.
 
 ---
 
