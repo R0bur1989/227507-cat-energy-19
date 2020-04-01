@@ -1,0 +1,33 @@
+
+.intro {
+  min-width: 320px;
+  min-height: 305px;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Oswald';
+
+  margin-bottom: 22px;
+}
+
+
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto ;
+  padding-top: 30px;
+}
+
+.intro__heading {
+  width: 245px;
+  margin: 0 auto;
+  font-weight: normal;
+
+  font-size: 36px;
+  line-height: 1
+}
+
+.intro__description {
+  text-transform: uppercase;
+}
