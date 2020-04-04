@@ -2,14 +2,16 @@
   margin-bottom: 32px;
 }
 
+.programs__wrapper {
+  @include container();
+}
 
 .programs__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-styleDropping();
 }
+
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: $secondary-color;
   padding: 22px;
   padding-top: 40px;
   margin-bottom: 20px;
@@ -18,9 +20,17 @@
 .programs__heading {
   margin: 0;
 
-  color: #111111;
-  font-family: 'Oswald';
-  font-weight: normal;
+  color: $heading-text-color;
+  font-family: $font-stack;
+  font-weight: 400;
   font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+}
+
+.programs__ref {
+  font-size: 16px;
+  font-family: $font-stack;
+  color: $heading-text-color;
   text-transform: uppercase;
 }

@@ -1,0 +1,23 @@
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 0;
+  border-radius: 0;
+
+  min-width: 280px;
+  min-height: 40px;
+  display: block;
+  text-transform: uppercase;
+  background-color: $primary-color;
+  color: #ffffff;
+  min-height: 40px;
+  padding: 10px 20px;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+}

@@ -2,10 +2,20 @@
   margin-bottom: 47px;
 }
 
-.features__list {
-  list-style: none;
+.features__wrapper {
+  @include container();
+}
+
+.features__heading {
   margin: 0;
-  padding: 0;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: 400;
+  color: $heading-text-color;
+}
+
+.features__list {
+  @include list-styleDropping();
 }
 
 .features__item {

@@ -1,6 +1,7 @@
+.page-header__wrapper {
+  @include container();
+}
 
 .main-menu__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-styleDropping();
 }
