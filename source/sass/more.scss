@@ -1,0 +1,32 @@
+.more {
+  border-bottom: solid 1px #ededed;
+  padding-bottom: 25px;
+}
+
+.more__wrapper {
+  @include container();
+  text-align: center;
+}
+
+.more__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: $font-stack;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $heading-text-color;
+  text-transform: uppercase;
+}
+
+.more__description {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.more .button {
+  background-color: $secondary-color;
+  color: #444444;
+  font-family: $font-stack;
+  font-size: 16px;
+}
