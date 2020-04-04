@@ -8,7 +8,7 @@
 }
 
 .catalog__list {
-  @include list-styleDropping();
+  @include list-rest();
 }
 
 .catalog__heading {

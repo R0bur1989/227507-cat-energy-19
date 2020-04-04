@@ -1,7 +1,5 @@
 .button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   border: 0;
   border-radius: 0;
 
@@ -16,8 +14,15 @@
   font-family: inherit;
   text-align: center;
   cursor: pointer;
-}
 
-.button:disabled {
+  &:disabled {
     cursor: not-allowed;
+  }
+
+  &--more{
+    background-color: $secondary-color;
+    color: #444444;
+    font-family: $font-stack;
+    font-size: 16px;
+  }
 }

@@ -7,7 +7,7 @@
 }
 
 .programs__list {
-  @include list-styleDropping();
+  @include list-rest();
 }
 
 .programs__item {
