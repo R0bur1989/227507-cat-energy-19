@@ -1,0 +1,32 @@
+.intro {
+  min-height: 305px;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  text-align: center;
+  font-family: $font-stack;
+
+  margin-bottom: 22px;
+}
+
+.intro__wrapper {
+  @include container();
+  padding-top: 30px;
+}
+
+.intro__heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.intro__description {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.intro__image {
+  width: 280px;
+  height: 270px;
+}

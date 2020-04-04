@@ -1,0 +1,24 @@
+.features {
+  margin-bottom: 47px;
+}
+
+.features__wrapper {
+  @include container();
+}
+
+.features__heading {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: 400;
+  color: $heading-text-color;
+}
+
+.features__list {
+  @include list-rest();
+}
+
+.features__item {
+  position: relative;
+  padding-left: 80px;
+}

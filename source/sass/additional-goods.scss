@@ -1,0 +1,45 @@
+.additional-goods{
+  margin-bottom: 35px;
+}
+
+.additional-goods__wrapper {
+  @include container();
+}
+
+.additional-goods__main-heading {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-family: $font-stack;
+  font-weight: 400;
+  line-height: 1;
+  color: $heading-text-color;
+  border-bottom: solid 1px #ededed;
+}
+
+.additional-goods__list {
+  @include list-rest();
+  margin-bottom: 40px;
+}
+
+.additional-goods__item {
+  border-bottom: solid 1px #ededed;
+  padding: 14px 0 17px;
+}
+
+.additional-goods__heading {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: $font-stack;
+  font-weight: 400;
+  line-height: 1;
+  color: $heading-text-color;
+  text-transform: uppercase;
+}
+
+.additional-goods__button {
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: $font-stack;
+}

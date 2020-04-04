@@ -1,0 +1,18 @@
+
+
+.page-header__logo {
+  width: 191px;
+  height: 39px;
+}
+
+.page-header__wrapper {
+  @include container();
+}
+
+.main-menu {
+  border-top: solid 1px #ededed;
+}
+
+.main-menu__list {
+  @include list-rest();
+}

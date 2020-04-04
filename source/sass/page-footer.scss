@@ -1,0 +1,20 @@
+.page-footer {
+  background-color: $secondary-color;
+  padding: 40px 0 30px;
+}
+
+.page-footer__wrapper {
+  @include container();
+}
+
+.page-footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.page-footer__social {
+  @include list-rest();
+  display: flex;
+}
