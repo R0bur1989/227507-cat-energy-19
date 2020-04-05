@@ -1,0 +1,58 @@
+.selection__wrapper {
+  @include container();
+}
+
+.selection__heading {
+  color: $heading-text-color;
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: $font-stack;
+
+  margin: 0 0 30px;
+}
+
+.selection__description {
+  font-family: $font-stack;
+  color: $heading-text-color;
+  text-transform: uppercase;
+
+  max-width: 226px;
+  margin: 0 0 40px;
+}
+
+.selection label {
+  display: block;
+  font-size: 16px;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  line-height: 1.13;
+  color: #222222;
+}
+
+.selection__cat-info {
+  padding-bottom: 25px;
+  border-bottom: solid 1px #ededed;;
+}
+
+.selection__programm {
+  padding: 30px 0 25px;
+  border-bottom: solid 1px #ededed;;
+}
+
+.selection__owner-info {
+  padding: 30px 0;
+}
+
+.selection__comment {
+  padding: 0 0 30px;
+}
+
+.selection__addition {
+  padding: 0 0 40px;
+}
+
+.selection p:last-child {
+  text-align: center;
+  line-height: 1.14;
+}

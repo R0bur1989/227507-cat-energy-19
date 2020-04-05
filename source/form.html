@@ -29,7 +29,63 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Подбор программы</h1>
+        <div class="page-main__wrapper">
+      <h1 class="page-main__heading">Подбор программы</h1>
+      <form class="selection" action="https://echo.htmlacademy.ru" method="POST">
+        <article class="selection__cat-info">
+          <p class="selection__description">Заполните анкету и мы подберем
+            программу питания для вашего кота</p>
+            <label>Имя:*<input type="text" placeholder="БАРСИК"  required></label>
+            <label>Вес (кг):*<input type="number" placeholder="7"></label>
+            <label>Возраст (лет):<input type="number" placeholder="7"></label>
+        </article>
+        <article class="selection__programm">
+          <input type="radio" name="weight-programm" value="weight-loss" id="weight-loss">
+          <label for="weight-loss">Похудение</label>
+          <input type="radio" name="weight-programm" value="weight-gain" id="weight-gain">
+          <label for="weight-gain">Набор массы</label>
+          <input type="radio" name="weight-programm" value="need-help" id="need-help">
+          <label for="need-help">Не знаю (Нужен ваш совет)</label>
+        </article>
+        <article class="selection__owner-info">
+          <h2 class="selection__heading">Контактные данные
+            (владельца кота)</h2>
+            <label for="owner-email">E-mail:*</label><input type="email" id="owner-email" required>
+            <label for="owner-tel">Телефон:*</label><input type="tel" id="owner-tel">
+        </article>
+        <article class="selection__comment">
+          <h2 class="selection__heading">Комментарий</h2>
+          <textarea name="" id="" cols="30" rows="10">Расскажите обо всех повадках кота
+          </textarea>
+        </article>
+        <article class="selection__addition">
+          <h2 class="selection__heading">Дополнительно</h2>
+          <input type="checkbox" id="sweetener">
+          <label for="sweetener">Сахарозаменитель</label>
+          <input type="checkbox" id="water">
+          <label for="water">Питьевая вода</label>
+          <input type="checkbox" id="milk">
+          <label for="milk">Молоко</label>
+          <input type="checkbox" id="vitamins">
+          <label for="vitamins">Витамины</label>
+        </article>
+        <button type="submit" class="button">Отправить заявку</button>
+        <p>* — Обязательные поля</p>
+      </form>
+      </div>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__heading">приглашаем
+            к&nbsp;сотрудничеству
+            дилеров!</h2>
+            <p class="contacts__description">
+              ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+        </div>
+      </section>
+      <section class="map">
+          <h2 class="visually-hidden">Карта с нашим адресом</h2>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
