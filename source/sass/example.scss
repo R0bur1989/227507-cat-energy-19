@@ -1,7 +1,65 @@
 .example {
   background-color: $secondary-color;
+  padding: 33px 0 38px;
 }
 
 .example__wrapper {
   @include container();
+}
+
+.example__heading {
+  margin: 0 0 33px;
+  font-family: $font-stack;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: $heading-text-color;
+}
+
+.example__description {
+  margin: 0 0 27px;
+}
+
+.example__container {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.example__container fieldset {
+  width: 124px;
+  min-height: 56px;
+}
+
+.example__info {
+  margin: 0;
+  font-size: 24px;
+  font-family: $font-stack;
+  line-height: 1;
+  color: $heading-text-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__expenses {
+  margin: 0 0 44px;
+  text-align: center;
+  font-family: $font-stack;
+  line-height: 1.43;
+  color: $heading-text-color;
+  text-transform: uppercase;
+}
+
+.example__image {
+  width: 311px;
+  height: 232px;
+  margin-bottom: 35px;
+}
+
+.example__bar {
+
+  text-align: center;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $heading-text-color;
 }

@@ -1,4 +1,4 @@
-.additional-goods{
+.additional-goods {
   margin-bottom: 35px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .additional-goods__list {
-  @include list-rest();
+  @include list-reset();
   margin-bottom: 40px;
 }
 
