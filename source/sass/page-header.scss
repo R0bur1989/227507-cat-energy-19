@@ -1,5 +1,3 @@
-
-
 .page-header__logo {
   width: 191px;
   height: 39px;
@@ -14,5 +12,5 @@
 }
 
 .main-menu__list {
-  @include list-rest();
+  @include list-reset();
 }
