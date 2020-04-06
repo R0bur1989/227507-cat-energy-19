@@ -1,3 +1,10 @@
+
+.page-header__container {
+  position: relative;
+  border-bottom: solid 1px #ededed;
+  padding: 11px 0 15px;
+}
+
 .page-header__logo {
   width: 191px;
   height: 39px;
@@ -7,10 +14,3 @@
   @include container();
 }
 
-.main-menu {
-  border-top: solid 1px #ededed;
-}
-
-.main-menu__list {
-  @include list-reset();
-}

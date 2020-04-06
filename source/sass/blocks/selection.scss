@@ -12,15 +12,6 @@
   margin: 0 0 30px;
 }
 
-.selection__description {
-  font-family: $font-stack;
-  color: $heading-text-color;
-  text-transform: uppercase;
-
-  max-width: 226px;
-  margin: 0 0 40px;
-}
-
 .selection label {
   display: block;
   font-size: 16px;
@@ -30,26 +21,19 @@
   color: #222222;
 }
 
-.selection__cat-info {
-  padding-bottom: 25px;
-  border-bottom: solid 1px #ededed;;
-}
-
-.selection__programm {
+.selection__border{
+  border: none;
   padding: 30px 0 25px;
   border-bottom: solid 1px #ededed;;
 }
 
-.selection__owner-info {
-  padding: 30px 0;
+.selection__no-border{
+  border: none;
+  padding: 30px 0 0;
 }
 
-.selection__comment {
-  padding: 0 0 30px;
-}
-
-.selection__addition {
-  padding: 0 0 40px;
+.selection__no-border:last-of-type {
+  margin-bottom: 40px;
 }
 
 .selection p:last-child {
