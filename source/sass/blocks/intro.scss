@@ -1,6 +1,6 @@
 .intro {
   min-height: 305px;
-  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   color: #ffffff;
@@ -19,12 +19,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  margin: 0;
+  margin: 0 0 19px;
 }
 
 .intro__description {
   text-transform: uppercase;
   line-height: 1;
+  margin: 0 0 30px;
 }
 
 .intro__image {
@@ -32,22 +33,25 @@
   height: 270px;
 }
 
-
 @media (min-width: $tablet-width) {
+  .intro {
+    background-image: none;
+    color: $heading-text-color;
+    text-align: left;
+    margin-bottom: 0;
+  }
 
-.intro {
-  background-image: none;
-  color: $heading-text-color;
-  text-align: left;
-}
+  .intro__wrapper {
+    padding: 60px 120px 0;
+  }
 
-.intro__wrapper {
-  padding: 60px 120px 0;
-}
+  .intro__heading {
+    font-size: 60px;
+    margin: 0 0 33px;
+  }
 
-.intro__heading {
-  font-size: 60px;
-}
-
-
+  .intro__description {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
 }

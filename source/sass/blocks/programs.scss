@@ -12,13 +12,17 @@
 
 .programs__item {
   background-color: $secondary-color;
-  padding: 22px;
-  padding-top: 40px;
+  padding: 40px 22px 22px;
   margin-bottom: 20px;
 }
 
+.programs__item:last-child {
+  margin-bottom: 0;
+}
+
 .programs__heading {
-  margin: 0;
+  margin: 0 0 40px;
+  padding-left: 70px;
 
   color: $heading-text-color;
   font-family: $font-stack;
@@ -28,9 +32,43 @@
   text-transform: uppercase;
 }
 
+.programs__description {
+  margin: 0 0 24px;
+}
+
 .programs__ref {
+  display: block;
   font-size: 16px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
   font-family: $font-stack;
   color: $heading-text-color;
   text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 51px;
+  }
+
+  .programs__item {
+    padding: 80px 315px 62px 52px;
+    margin-bottom: 30px;
+  }
+
+  .programs__heading {
+    font-size: 36px;
+    margin: 0 0 25px;
+    padding-left: 0;
+  }
+
+  .programs__description {
+    margin: 0 0 60px;
+  }
+
+  .programs__ref {
+    font-size: 20px;
+    border: none;
+  }
 }

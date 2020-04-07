@@ -1,5 +1,4 @@
 .contacts {
-  background-color: $secondary-color;
   padding: 30px 0 25px;
 }
 
@@ -21,4 +20,25 @@
 .contacts__description {
   margin: 0;
   line-height: 1.43;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 0 70px;
+    justify-content: space-between;
+  }
+
+  .contacts__heading {
+    width: 155px;
+  }
+
+  .contacts__description {
+    text-align: right;
+    width: 155px;
+  }
+
+  .contacts__street {
+    display: block;
+    margin-bottom: 27px;
+  }
 }

@@ -1,11 +1,17 @@
 .page-footer {
   background-color: $secondary-color;
-  padding: 40px 0 30px;
+  padding: 15px 0 30px;
 }
 
 .page-footer__wrapper {
   @include container();
 }
+
+.page-footer__container {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 25px;
+}
+
 
 .page-footer__logo {
   display: block;
@@ -16,5 +22,30 @@
 
 .page-footer__social {
   @include list-reset();
+  margin: 0 auto;
+  width: 127px;
   display: flex;
+}
+
+.page-footer__social-item {
+  display: block;
+  margin-right: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    background-color: $secondary-color;
+    padding: 64px 0;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__container {
+    border-bottom: none;
+    padding: 0;
+  }
 }

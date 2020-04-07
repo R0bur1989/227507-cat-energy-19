@@ -3,17 +3,14 @@
   display: block;
   padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 @mixin list-reset() {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-
-  @mixin container() {
-    padding: 0 30px;
-  }
 }

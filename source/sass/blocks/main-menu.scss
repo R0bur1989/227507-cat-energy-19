@@ -1,8 +1,9 @@
 .main-menu__list {
   @include list-reset();
 }
+
 .main-menu__item {
-  border-bottom: solid 1px #ededed;;
+  border-bottom: solid 1px #ededed;
 }
 
 .main-menu__ref {
