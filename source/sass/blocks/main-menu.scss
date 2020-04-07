@@ -19,3 +19,9 @@
 .main-menu__toggle {
   position: absolute;
 }
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    display: none;
+  }
+}

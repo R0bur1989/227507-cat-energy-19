@@ -10,3 +10,10 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+
+  @mixin container() {
+    padding: 0 30px;
+  }
+}
