@@ -11,7 +11,9 @@
   color: #ffffff;
   min-height: 40px;
   padding: 10px 20px;
-  font-family: inherit;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 1.25;
   text-align: center;
   cursor: pointer;
 

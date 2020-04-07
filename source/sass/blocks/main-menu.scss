@@ -1,0 +1,21 @@
+.main-menu__list {
+  @include list-reset();
+}
+.main-menu__item {
+  border-bottom: solid 1px #ededed;;
+}
+
+.main-menu__ref {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: $font-stack;
+  color: $heading-text-color;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 24px;
+}
+
+.main-menu__toggle {
+  position: absolute;
+}

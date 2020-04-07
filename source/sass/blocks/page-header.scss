@@ -1,0 +1,16 @@
+
+.page-header__container {
+  position: relative;
+  border-bottom: solid 1px #ededed;
+  padding: 11px 0 15px;
+}
+
+.page-header__logo {
+  width: 191px;
+  height: 39px;
+}
+
+.page-header__wrapper {
+  @include container();
+}
+

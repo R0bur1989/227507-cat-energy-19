@@ -15,7 +15,7 @@
 }
 
 .features__list {
-  @include list-rest();
+  @include list-reset();
 }
 
 .features__item {

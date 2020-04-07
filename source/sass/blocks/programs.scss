@@ -7,7 +7,7 @@
 }
 
 .programs__list {
-  @include list-rest();
+  @include list-reset();
 }
 
 .programs__item {

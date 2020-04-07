@@ -8,7 +8,7 @@
 }
 
 .catalog__list {
-  @include list-rest();
+  @include list-reset();
 }
 
 .catalog__heading {

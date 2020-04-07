@@ -1,0 +1,21 @@
+.page-main__wrapper {
+  @include container();
+}
+
+.page-main__heading {
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: 400;
+  font-family: $font-stack;
+  color: $heading-text-color;
+  margin: 30px 0 35px;
+}
+
+.page-main__description {
+  font-family: $font-stack;
+  color: $heading-text-color;
+  text-transform: uppercase;
+
+  max-width: 226px;
+  margin: 0 0 10px;
+}

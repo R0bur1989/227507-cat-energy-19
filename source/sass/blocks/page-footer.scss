@@ -15,6 +15,6 @@
 }
 
 .page-footer__social {
-  @include list-rest();
+  @include list-reset();
   display: flex;
 }
