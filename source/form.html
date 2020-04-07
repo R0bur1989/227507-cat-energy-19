@@ -38,14 +38,14 @@
       </div>
       <form class="selection" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="selection__border">
-          <div class="page-main__wrapper">
-            <label class="field-text"><span class="field-text__label">Имя:*</span><input class="field-input" type="text" placeholder="БАРСИК"  required></label>
-            <label class="field-text"><span class="field-text__label">Вес (кг):*</span><input class="field-input" type="number" value="7" min="0" max="50"></label>
-            <label class="field-text"><span class="field-text__label">Возраст (лет):</span><input class="field-input" type="number" value="7" min="0" max="30"></label>
+          <div class="selection__wrapper">
+            <label class="field-text"><span class="field-text__label">Имя:*</span><input class="field-text__field-input" type="text" placeholder="БАРСИК"  required></label>
+            <label class="field-text"><span class="field-text__label">Вес (кг):*</span><input class="field-text__field-input" type="number" value="7" min="0" max="50"></label>
+            <label class="field-text"><span class="field-text__label">Возраст (лет):</span><input class="field-text__field-input" type="number" value="7" min="0" max="30"></label>
             </div>
         </fieldset>
         <fieldset class="selection__border">
-          <div class="page-main__wrapper">
+          <div class="selection__wrapper">
           <input type="radio" name="weight-programm" value="weight-loss" id="weight-loss">
           <label for="weight-loss">Похудение</label>
           <input type="radio" name="weight-programm" value="weight-gain" id="weight-gain">
@@ -54,20 +54,20 @@
           <label for="need-help">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
-        <div class="page-main__wrapper">
+        <div class="selection__wrapper">
         <fieldset class="selection__no-border">
-          <h2 class="selection__heading">Контактные данные
-            (владельца кота)</h2>
-            <label class="field-text" for="owner-email"><span class="field-text__label">E-mail:*</span><input class="field-input" type="email" id="owner-email" required></label>
-            <label class="field-text" for="owner-tel"><span class="field-text__label">Телефон:*</span><input class="field-input" type="tel" id="owner-tel"></label>
+          <legend class="selection__heading">Контактные данные
+            (владельца кота)</legend>
+            <label class="field-text" for="owner-email"><span class="field-text__label">E-mail:*</span><input class="field-text__field-input" type="email" id="owner-email" required></label>
+            <label class="field-text" for="owner-tel"><span class="field-text__label">Телефон:*</span><input class="field-text__field-input" type="tel" id="owner-tel"></label>
         </fieldset>
         <fieldset class="selection__no-border">
-          <h2 class="selection__heading">Комментарий</h2>
+          <legend class="selection__heading">Комментарий</legend>
           <textarea name="" id="" cols="30" rows="10">Расскажите обо всех повадках кота
           </textarea>
         </fieldset>
         <fieldset class="selection__no-border">
-          <h2 class="selection__heading">Дополнительно</h2>
+          <legend class="selection__heading">Дополнительно</legend>
           <input type="checkbox" id="sweetener">
           <label for="sweetener">Сахарозаменитель</label>
           <input type="checkbox" id="water">
