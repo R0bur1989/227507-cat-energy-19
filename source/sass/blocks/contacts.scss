@@ -5,6 +5,11 @@
 .contacts__wrapper {
   @include container();
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    justify-content: space-between;
+  }
 }
 
 .contacts__heading {
@@ -15,29 +20,24 @@
   line-height: 1.25;
   color: $heading-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+  }
 }
 
 .contacts__description {
   margin: 0;
   line-height: 1.43;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__wrapper {
-    padding: 0 70px;
-    justify-content: space-between;
-  }
-
-  .contacts__heading {
-    width: 155px;
-  }
-
-  .contacts__description {
+  @media (min-width: $tablet-width) {
     text-align: right;
     width: 155px;
   }
+}
 
-  .contacts__street {
+.contacts__street {
+  @media (min-width: $tablet-width) {
     display: block;
     margin-bottom: 27px;
   }

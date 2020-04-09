@@ -1,9 +1,18 @@
 .main-menu__list {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-menu__item {
   border-bottom: solid 1px #ededed;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .main-menu__ref {
@@ -15,14 +24,16 @@
   text-align: center;
   text-transform: uppercase;
   padding: 24px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.39;
+    font-weight: 400;
+    text-align: left;
+  }
 }
 
 .main-menu__toggle {
   position: absolute;
-}
-
-@media (min-width: $tablet-width) {
-  .main-menu {
-    display: none;
-  }
 }

@@ -1,7 +1,17 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+      display: flex;
+  }
+}
+
 .page-header__container {
   position: relative;
   border-bottom: solid 1px #ededed;
   padding: 11px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .page-header__logo {
