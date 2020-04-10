@@ -3,13 +3,12 @@
   border: 0;
   border-radius: 0;
 
-  min-width: 280px;
+
   min-height: 40px;
   display: block;
   text-transform: uppercase;
   background-color: $primary-color;
   color: #ffffff;
-  min-height: 40px;
   padding: 10px 20px;
   font-family: $font-stack;
   font-size: 16px;
@@ -21,7 +20,7 @@
     cursor: not-allowed;
   }
 
-  &--more{
+  &--more {
     background-color: $secondary-color;
     color: #444444;
     font-family: $font-stack;

@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 23px;
   }
 }
 
@@ -12,6 +13,13 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    margin-right: 36px;
+  }
+}
+
+.main-menu__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -31,9 +39,16 @@
     line-height: 1.39;
     font-weight: 400;
     text-align: left;
+    padding: 0;
   }
 }
 
 .main-menu__toggle {
   position: absolute;
+  top: 25px;
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

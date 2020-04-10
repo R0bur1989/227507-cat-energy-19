@@ -1,5 +1,9 @@
 .features {
   margin-bottom: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .features__wrapper {
@@ -12,19 +16,42 @@
   font-size: 36px;
   font-weight: 400;
   color: $heading-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin: 0 0 63px;
+  }
 }
 
 .features__description {
-  margin: 0 0 32px;
+  margin: 0;
+  height: 100px;
+  width: 100%;
 }
 
 .features__list {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -90px;
+  }
 }
 
 .features__item {
   position: relative;
   padding-left: 80px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 90px;
+    width: 250px;
+  }
 }
 
 .features__item ::before {
@@ -36,31 +63,8 @@
 
   left: 0;
   top: -3px;
-}
 
-@media (min-width: $tablet-width) {
-  .features {
-    margin-bottom: 55px;
-  }
-
-  .features__heading {
-    font-size: 60px;
-    margin: 0 0 63px;
-  }
-
-  .features__list {
-    min-width: 628px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .features__item {
-    padding: 120px 0 0;
-    width: 250px;
-  }
-
-  .features__item ::before {
+  @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
     top: 0;
