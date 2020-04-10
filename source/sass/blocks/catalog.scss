@@ -9,6 +9,12 @@
 
 .catalog__list {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    @include container();
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog__heading {
@@ -20,5 +26,10 @@
   font-weight: 400;
   line-height: 1.67;
   color: $heading-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 74px;
+  }
 }
 
