@@ -11,16 +11,29 @@
   border-bottom: solid 1px #ededed;
   padding: 11px 20px 15px;
 
-
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 24px 0 0 30px;
     margin-right: 96px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0 0 109px;
+    margin-right: 400px;
+  }
 }
 
 .page-header__image {
-  width: 174px;
-  height: 59px;
-}
+  width: 191px;
+  height: 39px;
 
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 203px;
+    height: 60px;
+  }
+}

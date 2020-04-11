@@ -32,6 +32,11 @@
       top: 28px;
       left: 120px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 342px;
+      left: 193px;
+    }
   }
 
   &--more {
