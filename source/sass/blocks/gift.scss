@@ -1,5 +1,5 @@
 .gift {
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 289px;
   color: #ffffff;
@@ -7,9 +7,21 @@
   line-height: 1.25;
   text-align: center;
   padding-top: 190px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    min-height: 200px;
+    padding-top: 75px;
+    padding-right: 125px;
+    text-align: right;
+  }
 }
 
 .gift__description {
   max-width: 160px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+  }
 }

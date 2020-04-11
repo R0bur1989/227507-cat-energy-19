@@ -9,25 +9,28 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo"
-        ><img class="page-header__image"
+        ><img
+          class="page-header__image"
           src="img/logo-tablet.svg"
           width="174"
           height="59"
           alt="кошачье питание Cat-energy"
       /></a>
-  <nav class="main-menu">
-    <button class="burger main-menu__toggle" type="button"></button>
-    <ul class="main-menu__list">
-      <li class="main-menu__item"><a class="main-menu__ref" href="index.html">Главная</a></li>
-      <li class="main-menu__item">
-        <a class="main-menu__ref">Каталог продукции</a>
-      </li>
-      <li class="main-menu__item">
-        <a class="main-menu__ref" href="form.html">Подбор программы</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+      <nav class="main-menu">
+        <button class="burger main-menu__toggle" type="button"></button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__ref" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__ref">Каталог продукции</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__ref" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="page-main">
       <section class="catalog">
         <h1 class="catalog__heading">Каталог продукции</h1>
@@ -252,7 +255,26 @@
           <li class="more">
             <div class="more__wrapper">
               <a class="more__button">
-                <svg width="31" height="31"></svg>
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+                <svg
+                  width="31"
+                  height="31"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 30 30"
+                  style="enable-background: new 0 0 30 30;"
+                  xml:space="preserve"
+                >
+                  <polygon
+                    class="st0"
+                    points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "
+                  />
+                </svg>
               </a>
               <h2 class="more__heading">Показать еще 100500 товаров</h2>
               <p class="more__description">
@@ -269,7 +291,7 @@
           <ul class="additional-goods__list">
             <li class="additional-goods__item">
               <h3 class="additional-goods__heading">Сахарозаменитель</h3>
-              <div>
+              <div class="additional-goods__description">
                 <span>1 упаковка (100 г)</span>
                 <span>200 Р.</span>
               </div>
@@ -277,7 +299,7 @@
             </li>
             <li class="additional-goods__item">
               <h3 class="additional-goods__heading">Питьевая вода</h3>
-              <div>
+              <div class="additional-goods__description">
                 <span>5 литров</span>
                 <span>50 Р.</span>
               </div>
@@ -285,7 +307,7 @@
             </li>
             <li class="additional-goods__item">
               <h3 class="additional-goods__heading">Молоко</h3>
-              <div>
+              <div class="additional-goods__description">
                 <span>1 литр</span>
                 <span>100 Р.</span>
               </div>
@@ -293,7 +315,7 @@
             </li>
             <li class="additional-goods__item">
               <h3 class="additional-goods__heading">Витамины</h3>
-              <div>
+              <div class="additional-goods__description">
                 <span>1 упаковка (30 г)</span>
                 <span>300 Р.</span>
               </div>
@@ -307,17 +329,18 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--catalog">
         <div class="contacts__wrapper">
-          <h2 class="contacts__heading">приглашаем
-            к&nbsp;сотрудничеству
-            дилеров!</h2>
-            <p class="contacts__description">
-              ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
+          <h2 class="contacts__heading">
+            приглашаем к&nbsp;сотрудничеству дилеров!
+          </h2>
+          <p class="contacts__description">
+            ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург
+          </p>
         </div>
       </section>
       <section class="map">
-          <h2 class="visually-hidden">Карта с нашим адресом</h2>
+        <h2 class="visually-hidden">Карта с нашим адресом</h2>
       </section>
     </main>
     <footer class="page-footer">
@@ -416,11 +439,17 @@
                 /></svg></a>
           </li>
         </ul>
-          <a class="copyright" href="">
-            <span class="copyright__title">HTML Academy</span>
-           <svg class="copyright__icon" width="27" height="34"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+        <a class="copyright" href="">
+          <span class="copyright__title">HTML Academy</span>
+          <svg
+            class="copyright__icon"
+            width="27"
+            height="34"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60"
+          >
             <path
-             d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
             />
           </svg>
         </a>
