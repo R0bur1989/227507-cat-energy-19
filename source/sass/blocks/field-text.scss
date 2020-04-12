@@ -1,0 +1,13 @@
+.field-text {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.field-text__field-input {
+  flex-grow: 1;
+  padding: 17px 20px;
+}
+
+.field-text__label {
+  margin-right: 20px;
+}

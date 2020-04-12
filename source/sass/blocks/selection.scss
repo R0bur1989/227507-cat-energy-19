@@ -12,6 +12,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .selection__heading {
@@ -50,6 +54,11 @@
     border: none;
     padding: 35px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: calc(50% - 40px);
+    padding: 0;
+  }
 }
 
 .selection__no-border {
@@ -70,11 +79,32 @@
   @media (min-width: $tablet-width) {
     border: solid 1px #e6e6e6;
     padding: 36px 28px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 25px 28px;
+    height: 196px;
   }
 }
 
 .selection__container {
   @media (min-width: $tablet-width) {
-   display: flex;
+    display: flex;
+  }
+}
+
+.selection__1 {
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.selection__border .selection__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
