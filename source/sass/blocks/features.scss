@@ -55,7 +55,11 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 90px;
-    width: 250px;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 25%;
   }
 }
 

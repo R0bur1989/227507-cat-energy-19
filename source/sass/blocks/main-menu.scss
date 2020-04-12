@@ -1,3 +1,14 @@
+.main-menu {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
 .main-menu__list {
   @include list-reset();
 
@@ -12,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding-top: 23px;
+    // padding-top: 23px;
     margin-right: 36px;
   }
 }
@@ -42,10 +53,14 @@
     padding: 0;
   }
 
-
   @media (min-width: $desktop-width) {
-    color: #ffffff;
     font-size: 20px;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 }
 

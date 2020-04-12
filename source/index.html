@@ -7,7 +7,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--index">
           <a class="page-header__logo"
             ><img class="page-header__image"
               src="img/logo-tablet.svg"
@@ -18,12 +18,12 @@
       <nav class="main-menu">
         <button class="burger main-menu__toggle" type="button"></button>
         <ul class="main-menu__list">
-          <li class="main-menu__item"><a class="main-menu__ref">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref main-menu__ref--index">Главная</a></li>
           <li class="main-menu__item">
-            <a class="main-menu__ref" href="catalog.html">Каталог продукции</a>
+            <a class="main-menu__ref main-menu__ref--index" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__ref" href="form.html">Подбор программы</a>
+            <a class="main-menu__ref main-menu__ref--index" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -148,21 +148,23 @@
           <button>Стало</button>
         </div>
       </section>
-      <section class="contacts contacts--index">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__heading">
-            приглашаем к&nbsp;сотрудничеству дилеров!
-          </h2>
-          <p class="contacts__description">
-            <span class="contacts__street"
-              >ул. Большая Конюшенная, д.&nbsp;19/8</span
-            >
-            <span class="contacts__city">Санкт-Петербург</span>
-          </p>
-        </div>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта с нашим адресом</h2>
+      <section class="arrangement">
+        <article class="contacts contacts--index">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__heading">
+              приглашаем к&nbsp;сотрудничеству дилеров!
+            </h2>
+            <p class="contacts__description">
+              <span class="contacts__street"
+                >ул. Большая Конюшенная, д.&nbsp;19/8</span
+              >
+              <span class="contacts__city">Санкт-Петербург</span>
+            </p>
+          </div>
+        </article>
+        <article class="map">
+          <h2 class="visually-hidden">Карта с нашим адресом</h2>
+        </article>
       </section>
     </main>
     <footer class="page-footer">

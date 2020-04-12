@@ -7,6 +7,7 @@
   background-size: 55px 53px, auto;
 
   @media (min-width: $tablet-width) {
+    height: 400px;
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-tablet@1x.png");
     background-size: 113px 106px, auto;

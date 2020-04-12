@@ -7,6 +7,11 @@
     padding: 0;
     margin-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+    margin-bottom: 142px;
+  }
 }
 
 .card:nth-child(odd) {
@@ -15,19 +20,29 @@
   }
 }
 
+.card:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
 .card__wrapper {
   @include container();
 
   @media (min-width: $tablet-width) {
     padding: 0 38px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
 
-    min-width: 324px;
-    min-height: 431px;
+    width: 324px;
+    height: 431px;
     background-color: $secondary-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
