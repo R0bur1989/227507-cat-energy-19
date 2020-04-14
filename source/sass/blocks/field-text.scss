@@ -1,6 +1,16 @@
 .field-text {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  line-height: 1.13;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field-text__field-input {
