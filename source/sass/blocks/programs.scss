@@ -1,5 +1,9 @@
 .programs {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .programs__wrapper {
@@ -8,17 +12,37 @@
 
 .programs__list {
   @include list-reset();
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .programs__item {
   background-color: $secondary-color;
-  padding: 22px;
-  padding-top: 40px;
+  padding: 40px 22px 22px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 315px 62px 52px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: calc(50% - 40px);
+    padding: 80px 56px 62px 52px;
+    margin: 0 80px 0 0;
+  }
+}
+
+.programs__item:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .programs__heading {
-  margin: 0;
+  margin: 0 0 40px;
+  padding-left: 70px;
 
   color: $heading-text-color;
   font-family: $font-stack;
@@ -26,11 +50,37 @@
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    margin: 0 0 25px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 166px;
+  }
+}
+
+.programs__description {
+  margin: 0 0 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+  }
 }
 
 .programs__ref {
+  display: block;
   font-size: 16px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
   font-family: $font-stack;
   color: $heading-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border: none;
+  }
 }

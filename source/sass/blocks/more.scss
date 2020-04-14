@@ -1,11 +1,20 @@
-.more {
-  border-bottom: solid 1px #ededed;
-  padding-bottom: 25px;
-}
 
 .more__wrapper {
   @include container();
   text-align: center;
+  padding: 27px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 324px;
+    height: 431px;
+    border: solid 1px #e6e6e6;
+    padding: 55px 38px 40px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .more__heading {

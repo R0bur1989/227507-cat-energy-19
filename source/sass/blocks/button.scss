@@ -3,13 +3,12 @@
   border: 0;
   border-radius: 0;
 
-  min-width: 280px;
+
   min-height: 40px;
   display: block;
   text-transform: uppercase;
   background-color: $primary-color;
   color: #ffffff;
-  min-height: 40px;
   padding: 10px 20px;
   font-family: $font-stack;
   font-size: 16px;
@@ -21,10 +20,38 @@
     cursor: not-allowed;
   }
 
-  &--more{
+  &--intro {
+    @media (min-width: $tablet-width) {
+      width: 245px;
+      height: 52px;
+      font-size: 20px;
+      line-height: 1;
+      padding: 15px 25px;
+
+      position: absolute;
+      top: 28px;
+      left: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 342px;
+      left: 193px;
+    }
+  }
+
+  &--more {
     background-color: $secondary-color;
     color: #444444;
     font-family: $font-stack;
     font-size: 16px;
+  }
+
+  &--selection {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      min-width: 283px;
+      min-height: 52px;
+      margin-right: 60px;
+    }
   }
 }

@@ -1,10 +1,44 @@
 .card {
   border-bottom: solid 1px #ededed;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 142px;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+    flex-basis: 25%;
+  }
 }
+
 
 .card__wrapper {
   @include container();
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 38px 40px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+
+    width: 324px;
+    height: 431px;
+    background-color: $secondary-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 
@@ -20,7 +54,7 @@
 }
 
 
-.card__image {
-  width: 140px;
-  height: 144px;
-}
+// .card__image {
+//   width: 140px;
+//   height: 144px;
+// }
