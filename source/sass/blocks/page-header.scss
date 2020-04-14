@@ -7,7 +7,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding: 53px 40px 0 40px ;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   &--index::before {
@@ -38,12 +40,12 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 0 0 0 30px;
-    margin-right: 96px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 40px;
-    margin-right: 400px;
+    padding: 0;
+    margin: 0;
   }
 }
 
