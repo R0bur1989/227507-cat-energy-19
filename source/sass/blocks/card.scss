@@ -5,31 +5,26 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 0;
-    margin-bottom: 58px;
+
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 142px;
+    flex-basis: 50%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
-    margin-bottom: 142px;
+    padding-right: 40px;
+    padding-left: 40px;
+    flex-basis: 25%;
   }
 }
 
-.card:nth-child(odd) {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-  }
-}
-
-.card:nth-child(4n) {
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-  }
-}
 
 .card__wrapper {
   @include container();
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 0 38px 40px;
     // display: flex;
     // flex-direction: column;

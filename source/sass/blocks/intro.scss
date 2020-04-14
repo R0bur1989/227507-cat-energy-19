@@ -19,7 +19,8 @@
   @media (min-width: $desktop-width) {
     position: relative;
     display: flex;
-    margin-bottom: 135px;
+    margin: 0 auto 135px auto;
+    width: 1300px;
   }
 }
 
