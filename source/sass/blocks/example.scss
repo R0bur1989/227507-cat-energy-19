@@ -1,6 +1,10 @@
 .example {
   background-color: $secondary-color;
-  padding: 33px 0 38px;
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .example__wrapper {
@@ -14,19 +18,46 @@
   font-weight: 400;
   line-height: 1.67;
   color: $heading-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .example__description {
-  margin: 0 0 27px;
+  margin: 0 0 27px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 56px 0;
+  }
 }
 
 .example__container {
-  margin-bottom: 25px;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 241px;
+  }
 }
 
-.example__container fieldset {
-  width: 124px;
-  min-height: 56px;
+.example__table {
+  margin: 0 auto 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.example__table tbody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__small {
+  font-size: 12px;
+  position: absolute;
 }
 
 .example__info {
@@ -37,28 +68,96 @@
   color: $heading-text-color;
   text-transform: uppercase;
   text-align: center;
+  border: solid 1px #cdcdcd;
+  padding: 13px 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .example__expenses {
-  margin: 0 0 44px;
+  margin: 0;
   text-align: center;
   font-family: $font-stack;
   line-height: 1.43;
   color: $heading-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    max-width: 174px;
+    text-align: right;
+  }
+}
+
+.example__images {
+  position: relative;
+  padding-bottom: 35px;
+  min-height: 232px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $secondary-color;
+    min-height: 334px;
+  }
 }
 
 .example__image {
+  position: relative;
   width: 311px;
   height: 232px;
-  margin-bottom: 35px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &--after {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -152px;
+    width: 690px;
+    height: 517px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 517px;
+  }
+}
+
+.example__image img {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 517px;
+  }
 }
 
 .example__bar {
-
   text-align: center;
   font-family: $font-stack;
   text-transform: uppercase;
   font-size: 16px;
   color: $heading-text-color;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $secondary-color;
+  }
+}
+
+.example__button {
+  border: none;
+  background-color: transparent;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  cursor: pointer;
 }
