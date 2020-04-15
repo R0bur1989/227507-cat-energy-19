@@ -53,5 +53,9 @@
       min-height: 52px;
       margin-right: 60px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 568px;
+    }
   }
 }
