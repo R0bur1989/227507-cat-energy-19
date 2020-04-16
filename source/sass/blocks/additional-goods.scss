@@ -13,6 +13,11 @@
 
 .additional-goods__wrapper {
   @include container();
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional-goods__main-heading {
@@ -68,5 +73,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
+  }
+}
+
+.additional-goods__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
