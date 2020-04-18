@@ -58,4 +58,10 @@
       min-width: 568px;
     }
   }
+
+  &--additional {
+    @media (min-width: $desktop-width) {
+      min-width: 245px;
+    }
+  }
 }
