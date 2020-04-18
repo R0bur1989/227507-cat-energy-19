@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .page-main__heading {
@@ -19,6 +23,13 @@
     font-size: 60px;
     margin: 63px 0 53px 0;
     padding: 0 30px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 81px;
+    padding: 0 40px;
+    line-height: 1;
   }
 }
 
@@ -28,11 +39,11 @@
   text-transform: uppercase;
 
   max-width: 226px;
-  margin: 0 0 10px 0;
+  margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
     max-width: 322px;
     font-size: 20px;
-    margin: 0 0 35px 0;
+    margin: 0 0 70px 0;
   }
 }

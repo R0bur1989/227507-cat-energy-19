@@ -9,12 +9,17 @@
   <body>
     <header class="page-header page-header--index">
           <a class="page-header__logo"
-            ><img class="page-header__image"
-              src="img/logo-tablet.svg"
-              width="174"
-              height="59"
-              alt="кошачье питание Cat-energy"
-          /></a>
+            >
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__image"
+                src="img/logo-mobile.svg"
+                width="174"
+                height="59"
+                alt="логотип компании"
+            />
+            </picture>
+           </a>
       <nav class="main-menu">
         <button class="burger main-menu__toggle" type="button"></button>
         <ul class="main-menu__list">
@@ -33,15 +38,19 @@
         <div class="intro__wrapper">
           <h1 class="intro__heading">Функциональное питание для котов</h1>
           <p class="intro__description">Занялся собой? Займись котом!</p>
+          <a href="" class="button button--intro">Подобрать программу</a>
         </div>
         <div class="intro__container">
-        <img class="intro__image"
-        src="img/index-can-desktop@1x.png"
-        width="552"
-        height="499"
-        alt="изображение продукта"
-      />
-    <a href="" class="button button--intro">Подобрать программу</a>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <img class="intro__image"
+            src="img/index-can-mobile@1x.png"
+            width="280"
+            height="270"
+            alt="изображение продукта"
+          />
+          </picture>
       </div>
       </section>
       <section class="programs">
@@ -105,47 +114,55 @@
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
             Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            этом он не менял&nbsp;своих привычек и по-прежнему спит по 16 часов в
             день.
           </p>
           <div class="example__container">
-            <table>
+            <table class="example__table">
               <tr>
-                <td>снижение веса</td>
+                <td class="example__small">снижение веса</td>
                 <td class="example__info">5 кг</td>
               </tr>
               <tr>
-                <td>затрачено времени</td>
+                <td class="example__small">затрачено времени</td>
                 <td class="example__info">60 дней</td>
               </tr>
             </table>
+            <p class="example__expenses"><span>Затраты на питание:</span><span>15 000 руб.</span></p>
           </div>
-          <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
         </div>
         <div class="example__images">
-          <div class="example__image">
-            <img
+          <div class="example__image example__image--before">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img
               src="img/before-mobile@1x.png"
               alt=""
               width="311"
               height="232"
             />
+            </picture>
           </div>
-          <div class="example__image">
-            <img
-              src="img/after-mobile@1x.png"
-              alt=""
-              width="311"
-              height="232"
-            />
+          <div class="example__image example__image--after">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                <img
+                src="img/after-mobile@1x.png"
+                alt=""
+                width="311"
+                height="232"
+              />
+            </picture>
           </div>
-        </div>
-        <div class="example__bar">
-          <button>Было</button>
-          <span class="example__scale"
-            ><span class="example__toggle"></span
-          ></span>
-          <button>Стало</button>
+          <div class="example__bar">
+            <button class="example__button example__button-before">Было</button>
+            <span class="example__scale"
+              ><span class="example__toggle"></span
+            ></span>
+            <button class="example__button example__button-after">Стало</button>
+          </div>
         </div>
       </section>
       <section class="arrangement">

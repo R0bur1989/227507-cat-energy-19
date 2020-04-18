@@ -6,49 +6,78 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -62px;
-    margin-bottom: 75px;
+    width: 1300px;
+    margin: -62px auto 86px auto;
   }
 }
 
 .additional-goods__wrapper {
   @include container();
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional-goods__main-heading {
   margin: 0;
-  padding-bottom: 30px;
+  padding: 0 0 20px 20px;
   font-size: 24px;
   font-family: $font-stack;
   font-weight: 400;
   line-height: 1;
   color: $heading-text-color;
-  border-bottom: solid 1px #ededed;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    padding-bottom: 0;
+    padding: 0 0 0 30px;
     margin-bottom: 75px;
-    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 40px;
   }
 }
 
 .additional-goods__list {
   @include list-reset();
   margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: calc(75% - 40px);
+    margin-bottom: 0;
+  }
 }
 
+
 .additional-goods__item {
-  border-bottom: solid 1px #ededed;
+  border-top: solid 1px #ededed;
   padding: 14px 0 17px 0;
 
   @media (min-width: $tablet-width) {
-    border: solid 1px #e6e6e6;
+    border-left: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
     padding: 28px 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 16px 0;
+    margin-left: 40px;
+  }
+}
+
+.additional-goods__item:last-child {
+  border-bottom: solid 1px #ededed;
 }
 
 .additional-goods__heading {
@@ -60,6 +89,12 @@
   line-height: 1;
   color: $heading-text-color;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 20px;
+    flex-basis: 50%;
+  }
 }
 
 .additional-goods__description {
@@ -67,5 +102,24 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-basis: 50%;
+  }
+}
+
+.additional-goods__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 68%;
+    align-items: center;
   }
 }

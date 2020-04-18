@@ -35,14 +35,15 @@
         программу питания для вашего кота</p>
       </div>
       <form class="selection" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="selection__border">
+        <div class="selection__container">
+        <fieldset class="selection__item selection__item--border">
           <div class="selection__wrapper">
             <label class="field-text"><span class="field-text__label">Имя:*</span><input class="field-text__field-input" type="text" placeholder="БАРСИК"  required></label>
             <label class="field-text"><span class="field-text__label">Вес (кг):*</span><input class="field-text__field-input" type="number" value="7" min="0" max="50"></label>
             <label class="field-text"><span class="field-text__label">Возраст (лет):</span><input class="field-text__field-input" type="number" value="7" min="0" max="30"></label>
             </div>
         </fieldset>
-        <fieldset class="selection__border">
+        <fieldset class="selection__item selection__item--border">
           <div class="selection__wrapper">
             <div class="selection__programm">
           <input type="radio" name="weight-programm" value="weight-loss" id="weight-loss">
@@ -54,20 +55,24 @@
           </div>
           </div>
         </fieldset>
+      </div>
         <div class="selection__wrapper">
-        <fieldset class="selection__no-border">
+        <fieldset class="selection__item">
           <legend class="selection__heading">Контактные данные
             (владельца кота)</legend>
+            <div class="selection__container selection__container--owner">
             <label class="field-text" for="owner-email"><span class="field-text__label">E-mail:*</span><input class="field-text__field-input" type="email" id="owner-email" required></label>
             <label class="field-text" for="owner-tel"><span class="field-text__label">Телефон:*</span><input class="field-text__field-input" type="tel" id="owner-tel"></label>
+          </div>
         </fieldset>
-        <fieldset class="selection__no-border">
+        <fieldset class="selection__item">
           <legend class="selection__heading">Комментарий</legend>
-          <textarea name="" id="" cols="30" rows="10">Расскажите обо всех повадках кота
+          <textarea class="selection__reply" name="" id="" cols="30" rows="10">Расскажите обо всех повадках кота
           </textarea>
         </fieldset>
-        <fieldset class="selection__no-border">
+        <fieldset class="selection__item">
           <legend class="selection__heading">Дополнительно</legend>
+          <div class="selection__additional">
           <input type="checkbox" id="sweetener">
           <label for="sweetener">Сахарозаменитель</label>
           <input type="checkbox" id="water">
@@ -76,10 +81,11 @@
           <label for="milk">Молоко</label>
           <input type="checkbox" id="vitamins">
           <label for="vitamins">Витамины</label>
+        </div>
         </fieldset>
-        <div class="selection__container">
+        <div class="selection__container selection__container--info">
         <button type="submit" class="button button--selection">Отправить заявку</button>
-        <p>* — Обязательные поля</p>
+        <p class="selection__info">* — Обязательные поля</p>
         </div>
         </div>
       </form>
