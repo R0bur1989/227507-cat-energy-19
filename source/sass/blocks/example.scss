@@ -3,13 +3,12 @@
   padding: 33px 0 38px 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding: 0;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 170px;
     display: flex;
     width: 1300px;
     margin: 0 auto;
