@@ -1,9 +1,9 @@
 .card {
-  border-bottom: solid 1px #ededed;
+  border-top: solid 1px #ededed;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
+    border: none;
     padding: 0;
 
     padding-right: 30px;
@@ -19,6 +19,13 @@
   }
 }
 
+.card:last-child {
+  border-bottom: solid 1px #ededed;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
 
 .card__wrapper {
   @include container();
@@ -26,13 +33,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0 38px 40px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
 
     width: 324px;
-    height: 431px;
+    min-height: 431px;
     background-color: $secondary-color;
   }
 
@@ -41,9 +44,8 @@
   }
 }
 
-
 .card__heading {
-  margin: 0;
+  margin: 25px 0 18px 0;
   font-size: 16px;
   font-family: $font-stack;
   font-weight: 400;
@@ -51,10 +53,63 @@
   color: $heading-text-color;
   text-transform: uppercase;
   max-width: 74px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 124px;
+    margin: 39px auto 28px auto;
+    text-align: center;
+  }
 }
 
+.card__image {
+  width: 140px;
+  height: 144px;
 
-// .card__image {
-//   width: 140px;
-//   height: 144px;
-// }
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+    width: 161px;
+    height: 172px;
+    transform: translateY(-46px);
+
+    &--big {
+      width: 195px;
+      height: 208px;
+      transform: translateY(-82px);
+    }
+  }
+}
+
+.card__mobile-wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.card__table {
+  width: 142px;
+  font-size: 12px;
+  line-height: 1.33;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    width: 252px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 171px;
+  }
+}
+
+.card__table-row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
