@@ -54,10 +54,20 @@
 
 .page-footer__social-item {
   margin-right: 36px;
+  width: 32px;
+  height: 32px;
 }
 
 .page-footer__social-item:last-child {
   margin-right: 0;
+}
+
+.page-footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
