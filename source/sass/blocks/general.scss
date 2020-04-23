@@ -47,10 +47,9 @@ img {
 }
 
 .burger {
+  display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 19px;
-  background-color: transparent;
-  border: none;
   background-image: url("../img/icon-mobile-menu.svg");
-  cursor: pointer;
 }

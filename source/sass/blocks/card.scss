@@ -1,6 +1,6 @@
 .card {
   border-top: solid 1px #ededed;
-  padding-bottom: 25px;
+  padding: 0 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -9,7 +9,6 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 142px;
-    flex-basis: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,11 +27,15 @@
 }
 
 .card__wrapper {
-  @include container();
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
     margin: 0;
-    padding: 0 38px 40px;
+    padding: 165px 38px 40px 38px;
 
     width: 324px;
     min-height: 431px;
@@ -55,43 +58,51 @@
   max-width: 74px;
 
   @media (min-width: $tablet-width) {
-    max-width: 124px;
-    margin: 39px auto 28px auto;
+    max-width: 127px;
+    margin: 0 auto 28px auto;
     text-align: center;
+
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
 .card__image {
+  flex-basis: 50%;
   width: 140px;
   height: 144px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    position: absolute;
+    top: 0 - 45px;
+    left: 0;
+    right: 0;
+
     margin: 0 auto;
     width: 161px;
     height: 172px;
-    transform: translateY(-46px);
 
     &--big {
+      top: 0 - 81px;
+
       width: 195px;
       height: 208px;
-      transform: translateY(-82px);
     }
   }
 }
 
-.card__mobile-wrapper {
-  display: flex;
+.card__image img {
+  object-fit: cover;
+}
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
+.card__wrapper .button {
+  flex-basis: 100%;
 }
 
 .card__table {
-  width: 142px;
+  width: 140px;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -109,7 +120,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0;
+    line-height: 1.5;
     border-bottom: 1px solid #cdcdcd;
   }
 }

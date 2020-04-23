@@ -23,7 +23,6 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    // padding-top: 23px;
     margin-right: 36px;
   }
 }
@@ -67,11 +66,15 @@
 .main-menu__toggle {
   width: 32px;
   height: 32px;
-  background-color: red;
-  text-align: center;
+  padding: 0;
+
   position: absolute;
-  top: 25px;
-  right: 19px;
+  top: 18.5px;
+  right: 17px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
