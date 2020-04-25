@@ -41,17 +41,17 @@
     padding: 0 0 0 40px;
   }
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      @include line();
-    }
-  }
+  // &::before {
+  //   @media (min-width: $tablet-width) {
+  //     @include line();
+  //   }
+  // }
 
-  &::after {
-    @media (min-width: $tablet-width) {
-      @include line();
-    }
-  }
+  // &::after {
+  //   @media (min-width: $tablet-width) {
+  //     @include line();
+  //   }
+  // }
 }
 
 .additional-goods__main-heading span {
