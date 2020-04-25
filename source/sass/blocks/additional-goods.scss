@@ -22,6 +22,7 @@
 }
 
 .additional-goods__main-heading {
+  position: relative;
   margin: 0;
   padding: 0 0 20px 20px;
   font-size: 24px;
@@ -31,37 +32,24 @@
   color: $heading-text-color;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     font-size: 36px;
     padding: 0 0 0 30px;
     margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     padding: 0 0 0 40px;
   }
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 0;
-    width: 100vw;
-    height: 3px;
-    background-color: $primary-color;
-    z-index: -1;
+    @media (min-width: $tablet-width) {
+      @include line();
+    }
   }
 
   &::after {
     @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      top: 18px;
-      width: 100vw;
-      height: 3px;
-      background-color: $primary-color;
-      z-index: -1;
+      @include line();
     }
   }
 }
@@ -69,12 +57,12 @@
 .additional-goods__main-heading span {
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    padding: 0 38px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
-    margin: 0 -38px;
+    margin: 0 -40px;
   }
 }
 

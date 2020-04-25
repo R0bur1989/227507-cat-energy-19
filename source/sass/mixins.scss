@@ -22,3 +22,14 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin line() {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100vw;
+  height: 3px;
+  background-color: $primary-color;
+  z-index: -1;
+}

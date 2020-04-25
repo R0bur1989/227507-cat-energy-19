@@ -7,7 +7,8 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header page-header--index">
+    <header class="header-back">
+      <div class="page-header page-header--index">
       <a class="page-header__logo">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -20,11 +21,11 @@
           />
         </picture>
       </a>
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--nojs">
         <button class="main-menu__toggle" type="button"><span class="burger"></span></button>
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--index">Главная</a>
+            <a class="main-menu__link main-menu__link--index main-menu__link--active">Главная</a>
           </li>
           <li class="main-menu__item">
             <a
@@ -40,6 +41,7 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="page-main">
       <section class="intro">
@@ -66,7 +68,7 @@
             />
           </picture>
         </div>
-        <a href="" class="button button--intro">Подобрать программу</a>
+        <a href="form.html" class="button button--intro">Подобрать программу</a>
       </section>
       <section class="programs">
         <h2 class="visually-hidden">Программы питания</h2>
@@ -182,16 +184,16 @@
           <div class="example__container">
             <table class="example__table">
               <tr>
-                <td class="example__small">снижение веса</td>
                 <td class="example__info">5 кг</td>
+                <td class="example__small">снижение веса</td>
               </tr>
               <tr>
-                <td class="example__small">затрачено времени</td>
                 <td class="example__info">60 дней</td>
+                <td class="example__small">затрачено времени</td>
               </tr>
             </table>
             <p class="example__expenses">
-              <span>Затраты на питание:</span><span>15 000 руб.</span>
+              <span>Затраты на питание: </span><span>15 000 руб.</span>
             </p>
         </div>
       </div>
@@ -373,5 +375,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

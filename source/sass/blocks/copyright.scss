@@ -1,15 +1,33 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 0;
+  margin: 0 0 0 auto;
 }
 
 .copyright__title {
   font-size: 16px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }
 
 .copyright__icon {
   width: 40px;
   height: 40px;
+}
+
+.copyright svg {
+  fill: #666666;
+}
+
+.copyright:hover svg {
+  fill: $primary-color;
+}
+
+.copyright:active {
+  opacity: 0.3;
 }
