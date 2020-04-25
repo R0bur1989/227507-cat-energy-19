@@ -22,6 +22,7 @@
 }
 
 .additional-goods__main-heading {
+  position: relative;
   margin: 0;
   padding: 0 0 20px 20px;
   font-size: 24px;
@@ -39,6 +40,30 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 0 40px;
   }
+
+  // &::before {
+  //   @media (min-width: $tablet-width) {
+  //     @include line();
+  //   }
+  // }
+
+  // &::after {
+  //   @media (min-width: $tablet-width) {
+  //     @include line();
+  //   }
+  // }
+}
+
+.additional-goods__main-heading span {
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    margin: 0 -40px;
+  }
 }
 
 .additional-goods__list {
@@ -54,7 +79,6 @@
     margin-bottom: 0;
   }
 }
-
 
 .additional-goods__item {
   border-top: solid 1px #ededed;

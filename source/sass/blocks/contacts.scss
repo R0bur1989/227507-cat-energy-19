@@ -13,6 +13,11 @@
     width: 570px;
     height: 201px;
     background-color: #ffffff;
+    z-index: 10;
+  }
+
+  @media (min-width: 1301px) {
+    left: 15vw;
   }
 }
 

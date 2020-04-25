@@ -8,25 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"
-        ><img
-          class="page-header__image"
-          src="img/logo-tablet.svg"
-          width="174"
-          height="59"
-          alt="кошачье питание Cat-energy"
-      /></a>
-      <nav class="main-menu">
-        <button class="burger main-menu__toggle" type="button"></button>
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+          <img
+            class="page-header__image"
+            src="img/logo-mobile.svg"
+            width="174"
+            height="59"
+            alt="логотип компании"
+          />
+        </picture>
+    </a>
+      <nav class="main-menu main-menu--nojs">
+        <button class="main-menu__toggle" type="button"><span class="burger"></span></button>
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__ref" href="index.html">Главная</a>
+            <a class="main-menu__link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__ref">Каталог продукции</a>
+            <a class="main-menu__link main-menu__link--active">Каталог продукции</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__ref" href="form.html">Подбор программы</a>
+            <a class="main-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -37,14 +41,14 @@
         <ul class="catalog__list">
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src="img/chicken-small-tablet@1x.png"
-                  alt=""
-                  width="161"
-                  height="172"
+              <div class="card__image">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png" />
+                  <img
+                  src="img/chicken-small-mobile@1x.jpg"
+                  alt="Вкус курица 500 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy PRO 500 г</h3>
@@ -68,14 +72,14 @@
           </li>
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src="img/chicken-big-tablet@1x.png"
-                  alt=""
-                  width="195"
-                  height="208"
+              <div   class="card__image card__image--big">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png" />
+                  <img
+                  src="img/chicken-big-mobile@1x.jpg"
+                  alt="Вкус курица 1000 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy PRO 1000 г</h3>
@@ -99,14 +103,14 @@
           </li>
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src=""
-                  alt=""
-                  width="161"
-                  height="172"
+              <div class="card__image">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png" />
+                  <img
+                  src="img/fish-small-mobile@1x.jpg"
+                  alt="Вкус рыба 500 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy PRO 500 г</h3>
@@ -130,14 +134,14 @@
           </li>
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src=""
-                  alt=""
-                  width="195"
-                  height="208"
+              <div class="card__image card__image--big">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png" />
+                  <img
+                  src="img/fish-big-mobile@1x.jpg"
+                  alt="Вкус курица 1000 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy PRO 1000 г</h3>
@@ -161,14 +165,14 @@
           </li>
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src=""
-                  alt=""
-                  width="161"
-                  height="172"
+              <div  class="card__image">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                  <img
+                  src="img/buckwheat-small-mobile@1x.jpg"
+                  alt="Вкус гречка 500 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy Slim 500 г</h3>
@@ -192,14 +196,14 @@
           </li>
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src=""
-                  alt=""
-                  width="195"
-                  height="208"
+              <div class="card__image card__image--big">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png" />
+                  <img
+                  src="img/buckwheat-big-mobile@1x.jpg"
+                  alt="Вкус курица 1000 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy Slim 1000 г</h3>
@@ -223,14 +227,14 @@
           </li>
           <li class="card">
             <div class="card__wrapper">
-              <div>
-                <img
-                  class="card__image"
-                  src="img/rice-small-tablet@1x.png"
-                  alt=""
-                  width="161"
-                  height="172"
+              <div  class="card__image">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png" />
+                  <img
+                  src="img/rice-small-mobile@1x.jpg"
+                  alt="Вкус рис 500 грамм"
                 />
+                </picture>
               </div>
               <div>
                 <h3 class="card__heading">Cat Energy Slim 500 г</h3>
@@ -254,14 +258,13 @@
           </li>
           <li class="card more">
             <div class="more__wrapper">
-              <a class="more__button">
+              <a class="more__icon">
                 <?xml version="1.0" encoding="utf-8"?>
                 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
                 <svg
                   width="31"
                   height="31"
                   version="1.1"
-                  id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px"
@@ -286,7 +289,7 @@
         </ul>
       </section>
       <section class="additional-goods">
-        <h2 class="additional-goods__main-heading">Дополнительные товары</h2>
+        <h2 class="additional-goods__main-heading"><span>Дополнительные товары</span></h2>
         <div class="additional-goods__wrapper">
           <ul class="additional-goods__list">
             <li class="additional-goods__item">
@@ -358,7 +361,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo"
+        <a class="page-footer__logo" href="index.html"
           ><img
             class="page-footer__logo-image"
             src="img/logo-footer.svg"
@@ -368,7 +371,7 @@
         /></a>
         <ul class="page-footer__social">
           <li class="page-footer__social-item">
-            <a href=""
+            <a class="page-footer__social-link" href=""
               ><?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg
@@ -404,7 +407,7 @@
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a href=""
+            <a class="page-footer__social-link"  href=""
               ><?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg
@@ -428,7 +431,7 @@
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a href=""
+            <a class="page-footer__social-link"  href=""
               ><?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg
@@ -468,5 +471,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
