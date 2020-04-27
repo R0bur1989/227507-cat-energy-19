@@ -15,10 +15,19 @@
 
 .field-text__field-input {
   flex-grow: 1;
-  padding: 17px 20px;
+  padding: 15px 40px 15px 20px;
   border: 1px solid #e6e6e6;
+  font-size: 16px;
+  line-height: 1.13;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  color: #444444;
 }
 
 .field-text__label {
   margin-right: 20px;
+}
+
+.field-text input[type="number"] {
+  appearance: textfield;
 }
