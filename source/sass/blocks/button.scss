@@ -35,7 +35,10 @@
   }
 
   &--selection {
+    width: 100%;
+
     @media (min-width: $tablet-width) {
+      width: auto;
       font-size: 20px;
       min-width: 283px;
       min-height: 52px;

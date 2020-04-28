@@ -17,7 +17,7 @@
   font-family: $font-stack;
   color: $heading-text-color;
   margin: 30px 0 35px 0;
-  padding: 0 20px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -27,9 +27,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 81px;
+    max-width: 1300px;
     padding: 0 40px;
-    line-height: 1;
+    margin: 81px auto 53px auto;
   }
 }
 
@@ -42,7 +42,7 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 322px;
+    max-width: 323px;
     font-size: 20px;
     margin: 0 0 70px 0;
   }

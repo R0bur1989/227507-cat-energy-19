@@ -1,5 +1,6 @@
 .field-text {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   font-size: 16px;
@@ -13,9 +14,14 @@
   }
 }
 
+.field-text__label {
+  margin-right: 10px;
+}
+
 .field-text__field-input {
+  position: relative;
   flex-grow: 1;
-  padding: 15px 40px 15px 20px;
+  padding: 15px 40px 15px 15px;
   border: 1px solid #e6e6e6;
   font-size: 16px;
   line-height: 1.13;
@@ -24,8 +30,37 @@
   color: #444444;
 }
 
-.field-text__label {
-  margin-right: 20px;
+.field-text__field-input[type="email"]::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  width: 18px;
+  height: 14px;
+  background-color: red;
+  background-image: url("../../img/icon-tick.svg");
+}
+
+.field-text__field-input[type="tel"]::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/icon-tick.svg");
+}
+
+.field-text__field-input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.field-text__field-input:focus {
+  border: 2px solid #444444;
+}
+
+.field-text__field-input:invalid {
+  border: 2px solid #ff8282;
 }
 
 .field-text input[type="number"] {
