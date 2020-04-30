@@ -176,7 +176,8 @@
 }
 
 .example__image {
-  width: 311px;
+  min-width: 280px;
+  // width: 311px;
   height: 232px;
   padding-bottom: 267px;
   margin: 0 auto;
@@ -228,7 +229,8 @@
 }
 
 .example__image img {
-  width: 311px;
+  min-width: 280px;
+  // width: 311px;
   height: 232px;
 
   @media (min-width: $tablet-width) {

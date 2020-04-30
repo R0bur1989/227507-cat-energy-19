@@ -32,21 +32,26 @@
   font-weight: 400;
   font-family: $font-stack;
   padding-bottom: 30px;
+  margin: 0;
   max-width: 185px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     font-size: 36px;
     padding-bottom: 70px;
     max-width: 516px;
   }
+
+  &::after {
+      @include line();
+  }
 }
+
 
 .selection__item {
   min-width: 0;
   border: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -211,6 +216,10 @@
     line-height: 1.5;
     height: 174px;
     padding: 17px 20px;
+  }
+
+  &:hover {
+    border: solid 1px #cdcdcd;
   }
 }
 
