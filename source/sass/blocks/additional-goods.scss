@@ -1,13 +1,13 @@
 .additional-goods {
   margin-bottom: 35px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1300px;
-    margin: -62px auto 86px auto;
+    margin: -62px 0 86px 0;
   }
 }
 
@@ -17,6 +17,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -24,7 +25,7 @@
 .additional-goods__main-heading {
   position: relative;
   margin: 0;
-  padding: 0 0 20px 20px;
+  padding: 0 0 20px 0;
   font-size: 24px;
   font-family: $font-stack;
   font-weight: 400;
@@ -32,8 +33,9 @@
   color: $heading-text-color;
 
   @media (min-width: $tablet-width) {
+    flex-basis: 100%;
     font-size: 36px;
-    padding: 0 0 0 30px;
+    padding: 0;
     margin-bottom: 75px;
   }
 

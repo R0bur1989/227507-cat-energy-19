@@ -9,13 +9,12 @@
     background-position: 0 100%;
     background-size: 100% 462px;
     background-repeat: no-repeat;
-    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     display: flex;
-    background-image: linear-gradient(to right, $secondary-color 70%, #eaeaea 30%);
+    background-image: linear-gradient(to right, $secondary-color 75%, #eaeaea 30%);
   }
 }
 
@@ -107,23 +106,26 @@
   line-height: 1;
   position: absolute;
   background-color: $secondary-color;
-  bottom: -13px;
-  left: 20px;
-  width: 87px;
+  width: 84px;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   text-align: center;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     background-color: #ffffff;
-    width: auto;
     height: 27px;
-    min-width: 114px;
-    left: 24px;
-    padding: 5px;
+    width: 140px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    width: 140px;
     background-color: $secondary-color;
   }
 }
@@ -173,11 +175,20 @@
 .example__images {
   position: relative;
   min-height: 232px;
+  text-align: center;
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, $secondary-color calc(50% - 4px), #eaeaea 50%);
+    background-position: 0 100%;
+    background-size: 100% 462px;
+    background-repeat: no-repeat;
+    padding-bottom: 68px;
+  }
 }
 
 .example__image {
-  min-width: 280px;
-  // width: 311px;
   height: 232px;
   padding-bottom: 267px;
   margin: 0 auto;
@@ -279,7 +290,9 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -17px;
-    left: 199px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
     width: 34px;
     height: 34px;
@@ -288,10 +301,6 @@
     border: solid 1px #cdcdcd;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 195px;
   }
 
   &::before {
@@ -339,19 +348,22 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      width: 100%;
+      height: 1px;
+      border-top: 1px dotted #bebebe; /* Параметры линии  */
+    }
   }
 }
 
-// .example__button::before {
-//   @media (min-width: $tablet-width) {
-//     content: "";
-//     position: absolute;
-//     bottom: -6px;
-//     width: 100%;
-//     height: 2px;
-//     background-color: #000000;
-//     opacity: 0.3;
-//   }
-// }
+.example__button:hover::before {
+  border-top: 1px solid #bebebe;
+}
+
+.example__button:active::before {
+  border: none;
+}

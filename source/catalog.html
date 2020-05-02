@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи - каталог</title>
     <script src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU&amp;apikey=6d1d11ed-9ca2-4052-8263-ff7895b51b23" type="text/javascript">
@@ -37,7 +38,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main>
       <section class="catalog">
         <h1 class="catalog__heading">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -291,8 +292,8 @@
         </ul>
       </section>
       <section class="additional-goods">
-        <h2 class="additional-goods__main-heading"><span>Дополнительные товары</span></h2>
         <div class="additional-goods__wrapper">
+          <h2 class="additional-goods__main-heading"><span>Дополнительные товары</span></h2>
           <ul class="additional-goods__list">
             <li class="additional-goods__item">
               <div class="additional-goods__container">
@@ -356,7 +357,7 @@
             </p>
           </div>
         </article>
-        <article class="map">
+        <article class="map" id="map">
           <h2 class="visually-hidden">Карта с нашим адресом</h2>
         </article>
       </section>

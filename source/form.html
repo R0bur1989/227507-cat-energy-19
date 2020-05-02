@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи - Подбор программы</title>
     <script
@@ -51,10 +52,11 @@
         </p>
       </div>
       <form
-        class="selection"
+        class="page-main__form"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
+      <div class="selection">
         <div class="selection__container">
           <fieldset class="selection__item selection__item--border">
             <div class="selection__wrapper">
@@ -189,7 +191,7 @@
             </div>
           </fieldset>
           <fieldset class="selection__item">
-            <legend class="selection__heading">Комментарий</legend>
+            <legend class="selection__heading"><span>Комментарий</span></legend>
             <textarea
               class="selection__reply"
               name=""
@@ -202,7 +204,7 @@
             >
           </fieldset>
           <fieldset class="selection__item">
-            <legend class="selection__heading">Дополнительно</legend>
+            <legend class="selection__heading"><span>Дополнительно</span></legend>
             <div class="selection__additional">
               <input type="checkbox" id="sweetener" checked />
               <label for="sweetener">Сахарозаменитель</label>
@@ -221,6 +223,7 @@
             <p class="selection__info">* — Обязательные поля</p>
           </div>
         </div>
+      </div>
       </form>
       <section class="arrangement">
         <article class="contacts">
@@ -236,7 +239,7 @@
             </p>
           </div>
         </article>
-        <article class="map">
+        <article class="map" id="map">
           <h2 class="visually-hidden">Карта с нашим адресом</h2>
         </article>
       </section>

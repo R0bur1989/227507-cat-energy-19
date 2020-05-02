@@ -26,6 +26,8 @@
 
 .selection__heading {
   position: relative;
+  display: block;
+  width: 100%;
   color: $heading-text-color;
   line-height: 1;
   font-size: 24px;
@@ -33,19 +35,40 @@
   font-family: $font-stack;
   padding-bottom: 30px;
   margin: 0;
-  max-width: 185px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     padding-bottom: 70px;
-    max-width: 516px;
+  }
+
+  &::before {
+    @include line();
   }
 
   &::after {
-      @include line();
+    @include line();
   }
 }
 
+.selection__heading span {
+  display: inline-block;
+  max-width: 226px;
+  background-color: #ffffff;
+  padding: 0 25px 0 20px;
+  margin: 0 -25px 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 562px;
+    padding: 0 25px;
+    margin: 0 -25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 592px;
+    padding: 0 40px;
+    margin: 0 -40px;
+  }
+}
 
 .selection__item {
   min-width: 0;
