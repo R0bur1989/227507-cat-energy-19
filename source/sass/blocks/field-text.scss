@@ -1,5 +1,7 @@
 .field-text {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   font-size: 16px;
@@ -13,12 +15,54 @@
   }
 }
 
-.field-text__field-input {
-  flex-grow: 1;
-  padding: 17px 20px;
-  border: 1px solid #e6e6e6;
+.field-text__label {
+  margin-right: 10px;
 }
 
-.field-text__label {
-  margin-right: 20px;
+.field-text__field-input {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 15px 40px 15px 15px;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  line-height: 1.13;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field-text__field-input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.field-text__field-input:focus {
+  border: 2px solid #444444;
+}
+
+.field-text__field-input:focus ~ .field-text__icon {
+  fill: $primary-color;
+}
+
+.field-text__field-input:invalid {
+  border: 2px solid #ff8282;
+}
+
+.field-text__field-input:invalid ~ .field-text__icon {
+  fill: #ff8282;
+}
+
+.field-text input[type="number"] {
+  appearance: textfield;
+}
+
+.field-text__icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  fill: #222222;
+
+  &--phone {
+    right: 13px;
+  }
 }

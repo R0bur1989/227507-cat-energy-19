@@ -1,6 +1,10 @@
 .contacts {
-  padding: 70px 0 62px 0;
+  padding: 31px 0 26px 0;
   background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0 62px 0;
+  }
 
   &--index {
     background-color: #ffffff;
