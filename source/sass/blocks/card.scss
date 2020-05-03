@@ -69,8 +69,9 @@
 
 .card__image {
   flex-basis: 50%;
-  width: 140px;
-  height: 144px;
+  text-align: center;
+  // width: 140px;
+  // height: 144px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -79,14 +80,14 @@
     right: 0;
 
     margin: 0 auto;
-    width: 161px;
-    height: 172px;
+    // width: 161px;
+    // height: 172px;
 
     &--big {
       top: 0 - 81px;
 
-      width: 195px;
-      height: 208px;
+      // width: 195px;
+      // height: 208px;
     }
   }
 }
