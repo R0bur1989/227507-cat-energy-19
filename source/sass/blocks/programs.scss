@@ -193,4 +193,12 @@
 
 .programs__link:active {
   opacity: 0.3;
+
+  .arrow-small {
+    display: none;
+  }
+
+  svg {
+    width: 34px;
+  }
 }

@@ -240,8 +240,7 @@
 }
 
 .example__image img {
-  min-width: 280px;
-  // width: 311px;
+  width: 320px;
   height: 232px;
 
   @media (min-width: $tablet-width) {
