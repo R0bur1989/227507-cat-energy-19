@@ -115,12 +115,22 @@
     width: 140px;
     left: 0;
     right: 0;
+    bottom: -20px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 140px;
     background-color: $secondary-color;
+  }
+}
+
+.example__small span {
+  display: inline-block;
+  width: 54px;
+
+  @media (min-width: $tablet-width) {
+    width: 127px;
   }
 }
 
