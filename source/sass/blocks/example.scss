@@ -77,9 +77,13 @@
 
 .example__table {
   margin: 0 auto 25px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    min-width: 367px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,17 +91,7 @@
   }
 }
 
-.example__table tbody {
-  display: flex;
-  justify-content: space-between;
-  min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 367px;
-  }
-}
-
-.example__table tr {
+.example__table-row {
   position: relative;
 }
 
@@ -121,12 +115,22 @@
     width: 140px;
     left: 0;
     right: 0;
+    bottom: -20px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 140px;
     background-color: $secondary-color;
+  }
+}
+
+.example__small span {
+  display: inline-block;
+  width: 54px;
+
+  @media (min-width: $tablet-width) {
+    width: 127px;
   }
 }
 
@@ -240,8 +244,7 @@
 }
 
 .example__image img {
-  min-width: 280px;
-  // width: 311px;
+  width: 320px;
   height: 232px;
 
   @media (min-width: $tablet-width) {
