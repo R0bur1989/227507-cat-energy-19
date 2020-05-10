@@ -5,7 +5,8 @@
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:  url("../../img/map-pin.png"), url("../../img/bg-map-mobile@2x.png");
+    background-image: url("../../img/map-pin.png"),
+      url("../../img/bg-map-mobile@2x.png");
     background-size: 55px 53px, cover;
     background-position: 50% 55%, 0 0;
   }
@@ -15,7 +16,8 @@
     background-image: url("../img/map-tablet.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/map-pin.png"), url("../../img/bg-map-tablet@2x.png");
+      background-image: url("../../img/map-pin.png"),
+        url("../../img/bg-map-tablet@2x.png");
       background-size: 113px 106px, cover;
       background-position: 53% 45%, 0 0;
     }
@@ -25,7 +27,8 @@
     background-image: url("../img/map-desktop.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/map-pin.png"), url("../../img/bg-map-desktop@2x.png");
+      background-image: url("../../img/map-pin.png"),
+        url("../../img/bg-map-desktop@2x.png");
       background-position: 86% 46%, 0 0;
     }
   }
