@@ -48,12 +48,16 @@
 
 .more__icon {
   display: block;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
   opacity: 0.2;
+  width: 31px;
+  height: 31px;
+  background-image: url("../../img/icon-plus-mobile.svg");
 
   @media (min-width: $tablet-width) {
     width: 61px;
     height: 61px;
     margin: 0 auto 50px auto;
+    background-image: url("../../img/icon-plus.svg");
   }
 }

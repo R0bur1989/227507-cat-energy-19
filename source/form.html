@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Кэт энерджи - Подбор программы</title>
     <script
       src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU&amp;apikey=6d1d11ed-9ca2-4052-8263-ff7895b51b23"
@@ -13,6 +13,9 @@
     <script src="js/picturefill.js"></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+      </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <picture>
@@ -138,7 +141,7 @@
                     width="18"
                     height="14"
                   >
-                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
                 </label>
                 <label class="field-text" for="owner-tel"
@@ -148,6 +151,7 @@
                     type="tel"
                     value="8 (960) 900-60-90"
                     id="owner-tel"
+                    required
                   />
                   <svg
                     class="field-text__icon field-text__icon--phone"
@@ -256,7 +260,7 @@
         <a class="copyright" href="">
           <span class="copyright__title">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Кэт энерджи</title>
     <script
       src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU&amp;apikey=6d1d11ed-9ca2-4052-8263-ff7895b51b23"
@@ -13,6 +13,9 @@
     <script src="js/picturefill.js"></script>
   </head>
   <body>
+    <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header-back">
       <div class="page-header page-header--index">
         <a class="page-header__logo">
@@ -62,9 +65,9 @@
         </div>
         <div class="intro__container">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="webp/index-can-desktop@1x.webp 1x, webp/index-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="webp/index-can-tablet@1x.webp 1x, webp/index-can-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="webp/index-can-mobile@1x.webp 1x, webp/index-can-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source
               media="(min-width: 1300px)"
               srcset="
@@ -186,9 +189,9 @@
             <div class="example__image"></div>
             <div class="example__image example__image--before">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="webp/before-desktop@1x.webp 1x, webp/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="webp/before-tablet@1x.webp 1x, webp/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="webp/before-mobile@1x.webp 1x, webp/before-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source
                   media="(min-width: 1300px)"
                   srcset="
@@ -214,9 +217,9 @@
             </div>
             <div class="example__image example__image--after">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="webp/after-desktop@1x.webp 1x, webp/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="webp/after-tablet@1x.webp 1x, webp/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="webp/after-mobile@1x.webp 1x, webp/after-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source
                   media="(min-width: 1300px)"
                   srcset="
@@ -307,7 +310,7 @@
         <a class="copyright" href="" aria-label="Сайт HTML Academy">
           <span class="copyright__title">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -317,7 +320,7 @@
     <script src="js/example.js"></script>
     <script src="js/svg4everybody.js"></script>
     <script>
-      svg4everybody(); // run it now or whenever you are ready
+      svg4everybody();
     </script>
   </body>
 </html>
