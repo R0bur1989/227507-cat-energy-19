@@ -49,9 +49,11 @@
 
 .example__description {
   margin: 0 0 27px 0;
+  width: 266px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 56px 0;
+    width: 676px;
   }
 
   @media (min-width: $desktop-width) {

@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//api-maps.yandex.ru">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="css/style.min.css" as="style">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Кэт энерджи</title>
@@ -20,6 +24,7 @@
       <div class="page-header page-header--index">
         <a class="page-header__logo">
           <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
             <img
               class="page-header__image"

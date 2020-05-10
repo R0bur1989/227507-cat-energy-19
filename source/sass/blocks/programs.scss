@@ -56,6 +56,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     font-size: 36px;
+    line-height: 1;
     margin: 0 0 25px;
     padding-left: 0;
   }
@@ -156,17 +157,30 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 60px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 37px;
   }
 
   &--slim {
     @media (min-width: $tablet-width) {
       width: 372px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 462px;
+    }
   }
 
   &--pro {
     @media (min-width: $tablet-width) {
       width: 340px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 450px;
     }
   }
 }
@@ -184,6 +198,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     border: none;
+    padding-top: 0;
   }
 }
 
