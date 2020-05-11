@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -34,6 +35,10 @@
   font-family: $font-stack;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 40px 16px 15px;
+  }
 }
 
 .field-text__field-input:hover {
@@ -66,7 +71,15 @@
   top: 15px;
   fill: #222222;
 
+  @media (min-width: $desktop-width) {
+    top: 18px;
+  }
+
   &--phone {
     right: 13px;
+
+    @media (min-width: $desktop-width) {
+      top: 25px;
+    }
   }
 }

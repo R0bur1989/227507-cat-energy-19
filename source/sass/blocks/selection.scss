@@ -207,6 +207,7 @@
   &--info {
     @media (min-width: $tablet-width) {
       display: flex;
+      align-items: center;
     }
   }
 
@@ -344,6 +345,6 @@
   line-height: 1.14;
 
   @media (min-width: $tablet-width) {
-    margin-right: auto;
+    margin: 0 auto 0 0;
   }
 }
