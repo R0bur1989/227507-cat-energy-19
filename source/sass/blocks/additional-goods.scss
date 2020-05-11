@@ -44,9 +44,7 @@
   }
 
   &::before {
-    @media (min-width: $tablet-width) {
-      @include line();
-    }
+    @include line();
   }
 
   &::after {
@@ -57,9 +55,14 @@
 }
 
 .additional-goods__main-heading span {
+  background-color: #ffffff;
+  padding: 0 25px 0 20px;
+  margin: 0 -25px 0 -20px;
+
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     padding: 0 40px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +119,10 @@
   color: $heading-text-color;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    flex-basis: 60%;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     font-size: 20px;
@@ -125,16 +132,29 @@
 
 .additional-goods__description {
   margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-end;
     margin-bottom: 26px;
+    flex-basis: 40%;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     justify-content: space-between;
     margin: 0;
     flex-basis: 50%;
+  }
+}
+
+.additional-goods__description span:first-child {
+  margin-right: 53px;
+}
+
+.additional-goods__description span:last-child {
+  @media (min-width: $desktop-width) {
+    min-width: 60px;
   }
 }
 

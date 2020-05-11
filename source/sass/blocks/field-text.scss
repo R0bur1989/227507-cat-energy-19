@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-size: 16px;
   font-family: $font-stack;
   text-transform: uppercase;
@@ -15,6 +15,10 @@
   }
 }
 
+.field-text:last-of-type {
+  margin-bottom: 0;
+}
+
 .field-text__label {
   margin-right: 10px;
 }
@@ -23,7 +27,7 @@
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
-  padding: 15px 40px 15px 15px;
+  padding: 12px 40px 13px 15px;
   border: 1px solid #e6e6e6;
   font-size: 16px;
   line-height: 1.13;

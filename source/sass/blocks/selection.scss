@@ -339,6 +339,10 @@
 }
 
 .selection__info {
+  margin: 23px 0 34px 0;
+  font-size: 16px;
+  line-height: 1.14;
+
   @media (min-width: $tablet-width) {
     margin-right: auto;
   }

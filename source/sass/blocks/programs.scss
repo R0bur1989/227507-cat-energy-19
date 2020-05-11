@@ -186,7 +186,8 @@
 }
 
 .programs__link {
-  display: block;
+  position: relative;
+  display: inline-block;
   font-size: 16px;
   line-height: 1;
   border-top: 1px solid #d9d9d9;
@@ -202,24 +203,20 @@
   }
 }
 
-.programs__link span {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 12px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    right: -37px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
+.programs__link::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  right: -37px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.programs__link:hover span::after {
+.programs__link:hover::after {
   right: -44px;
   width: 32px;
   background-image: url("../../img/icon-right-arrow-verylong.svg");
