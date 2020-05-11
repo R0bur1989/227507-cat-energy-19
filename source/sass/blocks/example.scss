@@ -49,9 +49,11 @@
 
 .example__description {
   margin: 0 0 27px 0;
+  width: 266px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 56px 0;
+    width: 676px;
   }
 
   @media (min-width: $desktop-width) {
@@ -196,9 +198,6 @@
   height: 232px;
   padding-bottom: 267px;
   margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
 
   &--before {
     position: absolute;
@@ -211,7 +210,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      clip: rect(auto, 345px, auto, auto);
+      clip: rect(auto, 365px, auto, auto);
     }
   }
 
@@ -227,7 +226,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      clip: rect(auto, auto, auto, 340px);
+      clip: rect(auto, auto, auto, 365px);
     }
   }
 
@@ -240,6 +239,7 @@
   @media (min-width: $desktop-width) {
     width: 690px;
     height: 559px;
+    margin-left: -40px;
   }
 }
 

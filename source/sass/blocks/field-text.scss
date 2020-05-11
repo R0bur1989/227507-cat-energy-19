@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-size: 16px;
   font-family: $font-stack;
   text-transform: uppercase;
@@ -12,7 +12,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-bottom: 20px;
   }
+}
+
+.field-text:last-of-type {
+  margin-bottom: 0;
 }
 
 .field-text__label {
@@ -23,13 +28,17 @@
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
-  padding: 15px 40px 15px 15px;
+  padding: 12px 40px 13px 15px;
   border: 1px solid #e6e6e6;
   font-size: 16px;
   line-height: 1.13;
   font-family: $font-stack;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 40px 16px 15px;
+  }
 }
 
 .field-text__field-input:hover {
@@ -62,7 +71,15 @@
   top: 15px;
   fill: #222222;
 
+  @media (min-width: $desktop-width) {
+    top: 18px;
+  }
+
   &--phone {
     right: 13px;
+
+    @media (min-width: $desktop-width) {
+      top: 25px;
+    }
   }
 }

@@ -15,6 +15,10 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
+
 
 gulp.task("images", function(){
   return gulp.src("build/img/**/*.{png,jpg,svg}")
@@ -41,11 +45,26 @@ gulp.task("sprite", function() {
   .pipe(gulp.dest("build/img"))
 });
 
+gulp.task('minify', function() {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('source/*.js'),
+        uglify(),
+        gulp.dest('build/js')
+  );
+});
+
 gulp.task("html", function(){
   return gulp.src("source/*.html")
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
