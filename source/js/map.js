@@ -1,19 +1,19 @@
 // ymaps.ready(function () {
-// var myMap = new ymaps.Map('map', {
+// var myMap = new ymaps.Map("map", {
 //       center: [59.938635, 30.323118],
 //       zoom: 17
 //   }, {
-//       searchControlProvider: 'yandex#search'
+//       searchControlProvider: "yandex#search"
 //   }),
 
 //   myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-//       hintContent: 'Собственный значок метки',
-//       balloonContent: 'Это красивая метка'
+//       hintContent: "Собственный значок метки",
+//       balloonContent: "Это красивая метка"
 //   }, {
 //       // тип макета.
-//       iconLayout: 'default#image',
+//       iconLayout: "default#image",
 //       // Своё изображение иконки метки.
-//       iconImageHref: 'img/map-pin.png',
+//       iconImageHref: "img/map-pin.png",
 //       // Размеры метки.
 //       iconImageSize: [55, 53],
 //       // Смещение левого верхнего угла иконки относительно
@@ -60,31 +60,31 @@ function mapInit() {
     const documentWidth = document.documentElement.clientWidth;
 
     if (documentWidth < screens.md) {
-      return 'sm';
+      return "sm";
     }
 
     if (documentWidth < screens.xl) {
-      return 'md';
+      return "md";
     }
 
-    return 'xl';
+    return "xl";
   }
 
   const screenSize = getScreenSize();
 
-  const map = new ymaps.Map(document.querySelector('.map'), {
+  const map = new ymaps.Map(document.querySelector(".map"), {
     center: mapCenter[screenSize],
     zoom: mapZoom[screenSize],
-    controls: ['zoomControl'],
+    controls: ["zoomControl"],
   });
 
   map.container.fitToViewport();
-  map.behaviors.disable('scrollZoom');
+  map.behaviors.disable("scrollZoom");
 
   function createMarker(screenWidth) {
     return new ymaps.Placemark([59.938635, 30.323118], {}, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
+      iconLayout: "default#image",
+      iconImageHref: "img/map-pin.png",
       iconImageSize: iconSize[screenWidth],
       iconImageOffset: iconOffset[screenWidth],
     })
@@ -94,9 +94,9 @@ function mapInit() {
 
   map.geoObjects.add(marker);
 
-  map.events.add('sizechange', (event) => {
-    const oldWidth = event.get('oldSize')[0];
-    const newWidth = event.get('newSize')[0];
+  map.events.add("sizechange", (event) => {
+    const oldWidth = event.get("oldSize")[0];
+    const newWidth = event.get("newSize")[0];
 
     function updateMarker() {
       map.geoObjects.remove(marker);

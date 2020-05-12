@@ -351,22 +351,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -6px;
-      width: 100%;
-      height: 1px;
-      border-top: 1px dotted #bebebe; /* Параметры линии  */
-    }
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 6px;
   }
 }
 
-.example__button:hover::before {
-  border-top: 1px solid #bebebe;
+.example__button:hover {
+  border-bottom: 1px solid #bebebe;
 }
 
-.example__button:active::before {
+.example__button:active {
   border: none;
 }

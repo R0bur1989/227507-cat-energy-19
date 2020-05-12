@@ -11,17 +11,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 40px;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
     width: 570px;
     height: 201px;
     background-color: #ffffff;
-    z-index: 10;
-  }
-
-  @media (min-width: 1301px) {
-    left: 15vw;
+    margin: 95px 0 0 40px;
   }
 }
 

@@ -24,6 +24,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    width: 100%;
     background-image: url("../img/map-desktop.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

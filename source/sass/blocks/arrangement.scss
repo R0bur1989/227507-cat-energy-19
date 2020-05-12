@@ -3,3 +3,11 @@
     position: relative;
   }
 }
+
+.arrangement__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
+    height: 400px;
+  }
+}

@@ -53,11 +53,11 @@
   fill: $primary-color;
 }
 
-.field-text__field-input:invalid {
+.field-text__field-input:not(:placeholder-shown):invalid {
   border: 2px solid #ff8282;
 }
 
-.field-text__field-input:invalid ~ .field-text__icon {
+.field-text__field-input:not(:placeholder-shown):invalid ~ .field-text__icon {
   fill: #ff8282;
 }
 
