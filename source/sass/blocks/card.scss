@@ -69,6 +69,10 @@
   }
 }
 
+.card__heading a {
+  color: inherit;
+}
+
 .card__image {
   flex-basis: 50%;
   text-align: center;
