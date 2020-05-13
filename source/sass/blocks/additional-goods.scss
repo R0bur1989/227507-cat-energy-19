@@ -86,12 +86,12 @@
 }
 
 .additional-goods__item {
-  border-top: solid 1px #ededed;
+  border-top: solid 1px #cdcdcd;
   padding: 11px 0 17px 0;
 
   @media (min-width: $tablet-width) {
-    border-left: solid 1px #e6e6e6;
-    border-right: solid 1px #e6e6e6;
+    border-left: solid 1px #cdcdcd;
+    border-right: solid 1px #cdcdcd;
     padding: 29px 38px 24px 38px;
   }
 
@@ -106,7 +106,7 @@
 }
 
 .additional-goods__item:last-child {
-  border-bottom: solid 1px #ededed;
+  border-bottom: solid 1px #cdcdcd;
 }
 
 .additional-goods__heading {
