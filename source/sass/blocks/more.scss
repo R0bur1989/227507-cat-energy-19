@@ -1,14 +1,14 @@
 .more__wrapper {
   @include container();
   text-align: center;
-  padding: 27px 0 0 0;
+  padding: 20px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 324px;
     height: 431px;
     border: solid 1px #e6e6e6;
-    padding: 55px 38px 40px 38px;
+    padding: 55px 32px 40px 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,7 @@
 .more__description {
   font-size: 12px;
   line-height: 1.33;
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -48,7 +48,7 @@
 
 .more__icon {
   display: block;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 23px auto;
   opacity: 0.2;
   width: 31px;
   height: 31px;

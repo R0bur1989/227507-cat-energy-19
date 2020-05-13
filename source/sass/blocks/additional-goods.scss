@@ -25,7 +25,7 @@
 .additional-goods__main-heading {
   position: relative;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 35px 0;
   font-size: 24px;
   font-family: $font-stack;
   font-weight: 400;
@@ -73,7 +73,7 @@
 
 .additional-goods__list {
   @include list-reset();
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -87,12 +87,12 @@
 
 .additional-goods__item {
   border-top: solid 1px #ededed;
-  padding: 14px 0 17px 0;
+  padding: 11px 0 17px 0;
 
   @media (min-width: $tablet-width) {
     border-left: solid 1px #e6e6e6;
     border-right: solid 1px #e6e6e6;
-    padding: 28px 38px;
+    padding: 29px 38px 24px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,7 +111,7 @@
 
 .additional-goods__heading {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 16px;
   font-family: $font-stack;
   font-weight: 400;
@@ -120,18 +120,19 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     flex-basis: 60%;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     font-size: 20px;
-    flex-basis: 50%;
+    flex-basis: 53%;
   }
 }
 
 .additional-goods__description {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
 
@@ -144,7 +145,7 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     margin: 0;
-    flex-basis: 50%;
+    flex-basis: 47%;
   }
 }
 

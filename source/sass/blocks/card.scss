@@ -7,7 +7,7 @@
     padding: 0;
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 142px;
+    padding-top: 140px;
     flex-basis: auto;
     width: 50%;
   }
@@ -50,7 +50,7 @@
 }
 
 .card__heading {
-  margin: 25px 0 18px 0;
+  margin: 20px 0 12px 0;
   font-size: 16px;
   font-family: $font-stack;
   font-weight: 400;
@@ -76,8 +76,8 @@
 .card__image {
   flex-basis: 50%;
   text-align: center;
-  // width: 140px;
-  // height: 144px;
+  width: 140px;
+  height: 144px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -86,14 +86,14 @@
     right: 0;
 
     margin: 0 auto;
-    // width: 161px;
-    // height: 172px;
+    width: 161px;
+    height: 172px;
 
     &--big {
       top: 0 - 81px;
 
-      // width: 195px;
-      // height: 208px;
+      width: 195px;
+      height: 208px;
     }
   }
 }
