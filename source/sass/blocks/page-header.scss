@@ -14,20 +14,26 @@
   }
 }
 
-// .page-header--index::before {
-//   @media (min-width: $desktop-width) {
-//     position: absolute;
-//     top: 0;
-//     content: "";
-//     width: 100%;
-//     height: 696px;
-//     z-index: -100;
-//     background-image: url("../img/index-background-desktop@1x.jpg");
-//     background-repeat: no-repeat;
-//     background-position: 100% 0;
-//     background-size: 650px 696px;
-//   }
-// }
+.page-header--index::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 50%;
+    height: 696px;
+    z-index: -100;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 720px 696px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px 696px;
+    }
+  }
+}
 
 .page-header__logo {
   display: block;

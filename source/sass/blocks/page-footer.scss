@@ -2,7 +2,7 @@
   background-color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0;
+    padding: 35px 0;
   }
 }
 
@@ -11,7 +11,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -25,7 +24,7 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 0;
-    margin: 0;
+    margin: 0 155px 0 0;
   }
 }
 
@@ -66,9 +65,9 @@
   width: 32px;
   height: 32px;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 29px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   margin-right: 29px;
+  // }
 }
 
 .page-footer__social-item:last-child {
