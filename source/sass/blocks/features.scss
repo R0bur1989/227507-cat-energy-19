@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 47px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
-    margin: 0 0 63px;
+    margin: 0 0 67px;
   }
 }
 
@@ -38,6 +38,7 @@
     padding-left: 0;
     padding-top: 117px;
     max-width: 245px;
+    line-height: 1.5;
   }
 
   &::before {
