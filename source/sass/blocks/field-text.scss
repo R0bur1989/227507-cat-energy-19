@@ -79,5 +79,9 @@
 
   &--phone {
     right: 13px;
+
+    @media (min-width: $desktop-width) {
+      top: 15px;
+    }
   }
 }

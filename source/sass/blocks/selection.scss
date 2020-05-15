@@ -80,7 +80,6 @@
     margin-bottom: 54px;
   }
 
-
   &--border {
     padding-bottom: 25px;
     border-bottom: solid 1px #ededed;
@@ -202,7 +201,7 @@
 }
 
 .selection__programm input[type="radio"]:focus + label::before {
-  border: 1px solid #bababa;
+  outline: 2px solid lightblue;
 }
 
 .selection__programm input[type="radio"] + label:hover::before {
@@ -222,6 +221,13 @@
   opacity: 0.3;
 }
 
+.selection__programm input[type="radio"]:disabled + label:hover::before {
+  border: 1px solid #cdcdcd;
+}
+
+.selection__programm input[type="radio"]:disabled + label:active::before {
+  opacity: 1;
+}
 
 .selection__container {
   &--info {
@@ -347,8 +353,8 @@
   }
 }
 
-.selection__programm input[type="checkbox"]:focus + label::before {
-  border: 1px solid #bababa;
+.selection__additional input[type="checkbox"]:focus + label::before {
+  outline: 2px solid lightblue;
 }
 
 .selection__additional input[type="checkbox"] + label:hover::before {
@@ -364,10 +370,17 @@
   opacity: 0.3;
 }
 
-.selection__programm input[type="checkbox"]:disabled + label {
+.selection__additional input[type="checkbox"]:disabled + label {
   opacity: 0.3;
 }
 
+.selection__additional input[type="checkbox"]:disabled + label:hover::before {
+  border: 1px solid #cdcdcd;
+}
+
+.selection__additional input[type="checkbox"]:disabled + label:active::before {
+  opacity: 1;
+}
 
 .selection__info {
   margin: 23px 0 34px 0;

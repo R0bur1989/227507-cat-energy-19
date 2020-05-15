@@ -124,7 +124,6 @@
 
 .card__table-row {
   display: flex;
-  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     line-height: 1;
@@ -133,3 +132,12 @@
   }
 }
 
+.card__table-row td {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.card__table-row td:last-child {
+  text-align: right;
+}
