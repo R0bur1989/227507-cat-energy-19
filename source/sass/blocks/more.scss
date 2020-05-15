@@ -6,9 +6,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 324px;
-    height: 431px;
+    min-height: 431px;
     border: solid 1px #e6e6e6;
-    padding: 55px 32px 40px 47px;
+    padding: 55px 37px 40px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +57,7 @@
   @media (min-width: $tablet-width) {
     width: 61px;
     height: 61px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 48px auto;
     background-image: url("../../img/icon-plus.svg");
   }
 }

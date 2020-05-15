@@ -48,7 +48,7 @@
 }
 
 .field-text__field-input:focus {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
 .field-text__field-input:focus ~ .field-text__icon {
@@ -56,7 +56,7 @@
 }
 
 .field-text__field-input:not(:placeholder-shown):invalid {
-  border: 2px solid #ff8282;
+  outline: 2px solid #ff8282;
 }
 
 .field-text__field-input:not(:placeholder-shown):invalid ~ .field-text__icon {
@@ -79,9 +79,5 @@
 
   &--phone {
     right: 13px;
-
-    @media (min-width: $desktop-width) {
-      top: 25px;
-    }
   }
 }

@@ -165,7 +165,7 @@
   font-size: 0;
 }
 
-.selection__programm input[type="radio"] ~ label::before {
+.selection__programm input[type="radio"] + label::before {
   content: "";
   position: absolute;
   top: -6px;
@@ -201,18 +201,27 @@
   }
 }
 
-.selection__programm input[type="radio"] ~ label:hover::before {
+.selection__programm input[type="radio"]:focus + label::before {
   border: 1px solid #bababa;
 }
 
-.selection__programm input[type="radio"] ~ label:active {
+.selection__programm input[type="radio"] + label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.selection__programm input[type="radio"] + label:active {
   opacity: 0.3;
 }
 
-.selection__programm input[type="radio"] ~ label:active::before {
+.selection__programm input[type="radio"] + label:active::before {
   border: 1px solid #000000;
   opacity: 0.3;
 }
+
+.selection__programm input[type="radio"]:disabled + label {
+  opacity: 0.3;
+}
+
 
 .selection__container {
   &--info {
@@ -231,6 +240,7 @@
 .selection__container--owner .field-text {
   @media (min-width: $desktop-width) {
     flex-basis: calc(50% - 40px);
+    margin-bottom: 0;
   }
 }
 
@@ -306,7 +316,7 @@
   font-size: 0;
 }
 
-.selection__additional input[type="checkbox"] ~ label::before {
+.selection__additional input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: -7px;
@@ -337,18 +347,27 @@
   }
 }
 
-.selection__additional input[type="checkbox"] ~ label:hover::before {
+.selection__programm input[type="checkbox"]:focus + label::before {
   border: 1px solid #bababa;
 }
 
-.selection__additional input[type="checkbox"] ~ label:active {
+.selection__additional input[type="checkbox"] + label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.selection__additional input[type="checkbox"] + label:active {
   opacity: 0.3;
 }
 
-.selection__additional input[type="checkbox"] ~ label:active::before {
+.selection__additional input[type="checkbox"] + label:active::before {
   border: 1px solid #000000;
   opacity: 0.3;
 }
+
+.selection__programm input[type="checkbox"]:disabled + label {
+  opacity: 0.3;
+}
+
 
 .selection__info {
   margin: 23px 0 34px 0;

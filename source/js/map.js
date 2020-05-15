@@ -94,7 +94,7 @@ function mapInit() {
 
   map.geoObjects.add(marker);
 
-  map.events.add("sizechange", (event) => {
+  map.events.add("sizechange", function(event) {
     const oldWidth = event.get("oldSize")[0];
     const newWidth = event.get("newSize")[0];
 
