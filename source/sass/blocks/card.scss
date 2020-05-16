@@ -41,6 +41,7 @@
 
     width: 324px;
     min-height: 431px;
+    height: 100%;
     background-color: $secondary-color;
   }
 
@@ -48,6 +49,7 @@
     width: 245px;
   }
 }
+
 
 .card__heading {
   margin: 20px 0 12px 0;
@@ -104,17 +106,19 @@
 
 .card__wrapper .button {
   flex-basis: 100%;
+  margin-top: auto;
 }
 
 .card__table {
   width: 140px;
   font-size: 12px;
   line-height: 1;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     width: 252px;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,17 +127,15 @@
 }
 
 .card__table-row {
-  display: flex;
-
   @media (min-width: $tablet-width) {
     line-height: 1;
-    padding: 5px 0;
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .card__table-row td {
   @media (min-width: $tablet-width) {
+    padding: 5px 0;
     width: 50%;
   }
 }
