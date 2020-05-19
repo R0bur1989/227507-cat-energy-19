@@ -35,10 +35,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    display: block;
     margin: 0 auto;
     padding: 165px 38px 40px 38px;
-
     width: 324px;
     min-height: 431px;
     height: 100%;
@@ -47,6 +45,14 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+  }
+}
+
+.card__wrapper .button {
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-end;
   }
 }
 
@@ -102,11 +108,6 @@
 
 .card__image img {
   object-fit: cover;
-}
-
-.card__wrapper .button {
-  flex-basis: 100%;
-  margin-top: auto;
 }
 
 .card__table {
